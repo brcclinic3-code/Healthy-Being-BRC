@@ -1,0 +1,2729 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Appointment – BRC Clinic Gurugram | +91 93116 42999</title>
+  <meta name="description" content="Book an appointment at BRC Clinic Gurugram. Call +91 93116 42999 or WhatsApp. Online booking form available. Open all 7 days. Home visit available."/>
+  <link rel="canonical" href="https://brcclinic.in/appointment.html"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    .appt-hero-options { display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin:3rem 0; }
+    .aopt { background:var(--white);border:2px solid var(--border);border-radius:var(--r-lg);padding:2rem;text-align:center;transition:var(--transition);cursor:pointer; }
+    .aopt:hover,.aopt.selected { border-color:var(--primary);background:var(--primary-pale);transform:translateY(-3px); }
+    .aopt-icon { font-size:2.5rem;margin-bottom:0.75rem; }
+    .aopt h3 { font-family:'Outfit',sans-serif;font-weight:700;font-size:1rem;color:var(--text);margin-bottom:0.3rem; }
+    .aopt p { font-size:0.82rem;color:var(--text-mid); }
+    .full-form { background:var(--white);border-radius:var(--r-xl);padding:3rem;box-shadow:var(--shadow-xl);border:1px solid var(--border);max-width:700px;margin:0 auto; }
+    .steps { display:flex;gap:0;margin-bottom:2.5rem;position:relative; }
+    .steps::before { content:'';position:absolute;top:18px;left:0;right:0;height:2px;background:var(--border);z-index:0; }
+    .step { flex:1;text-align:center;position:relative;z-index:1; }
+    .step-num { width:36px;height:36px;border-radius:50%;background:var(--border);color:var(--text-light);font-family:'Outfit',sans-serif;font-weight:700;font-size:0.9rem;display:flex;align-items:center;justify-content:center;margin:0 auto 0.4rem; }
+    .step.active .step-num { background:var(--primary);color:var(--white); }
+    .step.done .step-num { background:var(--accent);color:var(--white); }
+    .step-label { font-size:0.72rem;color:var(--text-light);font-weight:600;text-transform:uppercase;letter-spacing:0.5px; }
+    .step.active .step-label { color:var(--primary); }
+    .quick-contact { display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem;margin-top:2rem; }
+    .qc-card { padding:1.25rem;background:var(--cream);border-radius:var(--r-md);border:1px solid var(--border);text-align:center;transition:var(--transition); }
+    .qc-card:hover { border-color:var(--secondary);transform:translateY(-2px); }
+    .qc-card a { text-decoration:none; }
+    .qc-icon { font-size:2rem;margin-bottom:0.5rem; }
+    .qc-title { font-family:'Outfit',sans-serif;font-weight:700;font-size:0.9rem;color:var(--text); }
+    .qc-val { font-size:0.82rem;color:var(--primary);font-weight:600; }
+    @media(max-width:768px){.appt-hero-options{grid-template-columns:1fr;}.full-form{padding:2rem 1.25rem;}.steps{gap:0;}}
+  </style>
+</head>
+<body>
+<div id="cursor-dot"></div><div id="cursor-ring"></div><div id="scroll-progress"></div>
+<div id="loading-screen"><div class="loading-logo">BRC <span>Clinic</span></div><div class="loading-bar-wrap"><div class="loading-bar"></div></div><p class="loading-text">Loading Appointment...</p></div>
+<div id="cookie-bar"><p>🍪 We use cookies. <a href="privacy-policy.html">Learn more</a></p><div class="cookie-btns"><button class="btn-cookie-accept" id="cookieAccept">Accept</button><button class="btn-cookie-decline" id="cookieDecline">Decline</button></div></div>
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><div class="nav-logo-icon">B</div><div class="nav-logo-text">BRC <span>Clinic</span></div></a>
+    <ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="conditions.html">Conditions</a></li><li><a href="blog.html">Blog</a></li><li><a href="testimonials.html">Reviews</a></li><li><a href="contact.html">Contact</a></li></ul>
+    <div class="nav-actions"><button class="btn-lang" id="langToggle">हिं / EN</button><button class="btn-theme" id="themeToggle">🌙</button><a href="appointment.html" class="btn-nav-cta" style="background:var(--gold);">📅 Book Now</a></div>
+    <div id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<div id="menu-overlay"></div>
+<div id="mobile-menu"><div class="mobile-menu-links"><a href="index.html">🏠 Home</a><a href="about.html">👩‍⚕️ About</a><a href="services.html">💊 Services</a><a href="conditions.html">🩺 Conditions</a><a href="appointment.html">📅 Book Appointment</a><a href="contact.html">📞 Contact</a></div></div>
+
+<div class="page-hero" style="background:linear-gradient(135deg,#C9815A 0%,#C9963A 100%);">
+  <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Book Appointment</span></div>
+  <h1>📅 Book an <span style="color:var(--gold-light)">Appointment</span></h1>
+  <p>Take the first step towards a pain-free, healthier life. Choose how you'd like to book below.</p>
+</div>
+
+<section class="section" style="background:var(--cream)">
+  <div class="container">
+
+    <!-- QUICK CONTACT OPTIONS -->
+    <div class="text-center reveal"><div class="section-label">Instant Connect</div><h2 class="section-title">Choose How to <span class="accent">Book</span></h2></div>
+    <div class="appt-hero-options">
+      <div class="aopt reveal" onclick="document.getElementById('bookingForm').scrollIntoView({behavior:'smooth'})">
+        <div class="aopt-icon">📝</div>
+        <h3>Online Form</h3>
+        <p>Fill the form below — we'll call you back within 30 minutes during clinic hours.</p>
+      </div>
+      <div class="aopt reveal" style="transition-delay:.15s" onclick="window.open('https://wa.me/919311642999?text=Hello%20BRC%20Clinic!%20I%20would%20like%20to%20book%20an%20appointment.','_blank')">
+        <div class="aopt-icon">💬</div>
+        <h3>WhatsApp</h3>
+        <p>Fastest response. Message us directly on WhatsApp for instant appointment confirmation.</p>
+      </div>
+      <div class="aopt reveal" style="transition-delay:.3s" onclick="window.location.href='tel:+919311642999'">
+        <div class="aopt-icon">📞</div>
+        <h3>Call Us</h3>
+        <p>Speak directly with our team. Call +91 93116 42999 or +91 70500 02000.</p>
+      </div>
+    </div>
+
+    <!-- BOOKING FORM -->
+    <div id="bookingForm">
+      <div class="full-form reveal">
+        <div class="steps">
+          <div class="step active"><div class="step-num">1</div><div class="step-label">Your Info</div></div>
+          <div class="step"><div class="step-num">2</div><div class="step-label">Condition</div></div>
+          <div class="step"><div class="step-num">3</div><div class="step-label">Confirm</div></div>
+        </div>
+        <h3 style="font-family:'Outfit',sans-serif;font-weight:800;font-size:1.5rem;color:var(--text);margin-bottom:0.5rem;">📅 Book Your Appointment</h3>
+        <p style="font-size:0.875rem;color:var(--text-mid);margin-bottom:2rem;">All fields marked with * are required. We treat all information with complete confidentiality.</p>
+        <form id="mainApptForm" onsubmit="submitMainForm(event)">
+          <div class="form-grid-2">
+            <div class="form-group"><label for="mFirst">First Name *</label><input type="text" id="mFirst" placeholder="First name" required/></div>
+            <div class="form-group"><label for="mLast">Last Name *</label><input type="text" id="mLast" placeholder="Last name" required/></div>
+          </div>
+          <div class="form-grid-2">
+            <div class="form-group"><label for="mPhone">Phone / WhatsApp *</label><input type="tel" id="mPhone" placeholder="+91 XXXXX XXXXX" required/></div>
+            <div class="form-group"><label for="mEmail">Email Address</label><input type="email" id="mEmail" placeholder="your@email.com"/></div>
+          </div>
+          <div class="form-grid-2">
+            <div class="form-group"><label for="mAge">Age</label><input type="number" id="mAge" placeholder="e.g. 35" min="1" max="120"/></div>
+            <div class="form-group"><label for="mGender">Gender</label><select id="mGender"><option value="">Select...</option><option>Male</option><option>Female</option><option>Other</option></select></div>
+          </div>
+          <div class="form-group">
+            <label for="mService">Primary Concern / Service Needed *</label>
+            <select id="mService" required>
+              <option value="">Select your main concern...</option>
+              <optgroup label="Pain & Spine">
+                <option>Back Pain / Disc Problem / Sciatica</option>
+                <option>Neck Pain / Cervical Spondylitis</option>
+                <option>Knee Pain / Hip Pain</option>
+                <option>Frozen Shoulder</option>
+                <option>Arthritis</option>
+                <option>Sports Injury</option>
+              </optgroup>
+              <optgroup label="Therapies">
+                <option>Acupuncture</option>
+                <option>Physiotherapy / Rehab</option>
+                <option>Naturopathy / Yoga</option>
+                <option>Fire Cupping / Gua Sha</option>
+                <option>Neurotherapy</option>
+                <option>Hypnotherapy</option>
+              </optgroup>
+              <optgroup label="Health Conditions">
+                <option>Fertility / IVF Support</option>
+                <option>PCOD / PCOS</option>
+                <option>Stroke / Paralysis Rehab</option>
+                <option>Recovery from Coma</option>
+                <option>Diabetes / BP / Thyroid</option>
+                <option>Weight Management</option>
+                <option>Insomnia / Stress / Anxiety</option>
+                <option>Tinnitus / Hearing Loss</option>
+                <option>Auto-Immune Disease</option>
+                <option>Gut Health / IBS</option>
+              </optgroup>
+              <optgroup label="Special Programs">
+                <option>Avoid Surgery Program</option>
+                <option>Post-Surgery Rehabilitation</option>
+                <option>Biofeedback Diagnosis</option>
+                <option>Home Visit Request</option>
+              </optgroup>
+              <option>Other (Please specify in message)</option>
+            </select>
+          </div>
+          <div class="form-group"><label for="mDuration">How long have you had this problem?</label><select id="mDuration"><option value="">Select...</option><option>Less than 1 month</option><option>1–3 months</option><option>3–6 months</option><option>6–12 months</option><option>1–3 years</option><option>More than 3 years</option></select></div>
+          <div class="form-group"><label for="mPrev">Previous Treatments (if any)</label><input type="text" id="mPrev" placeholder="e.g. Physiotherapy, Surgery, Medicines..."/></div>
+          <div class="form-group"><label for="mMessage">Describe Your Condition *</label><textarea id="mMessage" rows="4" placeholder="Please describe your symptoms, pain level, affected areas and any other relevant information..." required></textarea></div>
+          <div class="form-group" style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+            <label style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem;background:var(--cream);border-radius:var(--r-sm);cursor:pointer;font-size:0.875rem;">
+              <input type="checkbox" id="mHomeVisit" style="width:auto;cursor:pointer;"/> <span>I need a <strong>Home Visit</strong></span>
+            </label>
+            <label style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem;background:var(--cream);border-radius:var(--r-sm);cursor:pointer;font-size:0.875rem;">
+              <input type="checkbox" id="mFirstTime" style="width:auto;cursor:pointer;" checked/> <span>This is my <strong>First Visit</strong></span>
+            </label>
+          </div>
+          <button type="submit" class="btn-submit" style="font-size:1.05rem;">📅 Confirm Appointment Request →</button>
+          <p style="text-align:center;font-size:0.78rem;color:var(--text-light);margin-top:0.75rem;">Your message will be sent via WhatsApp for fastest response. We'll call you back within 30 minutes.</p>
+        </form>
+      </div>
+    </div>
+
+    <!-- WHY BOOK WITH US -->
+    <div style="margin-top:4rem;" class="reveal">
+      <div class="text-center"><div class="section-label">Why Choose Us</div><h2 class="section-title">What to <span class="accent">Expect</span></h2></div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1.25rem;margin-top:2rem;">
+        <div class="stat-box"><div class="stat-icon">⚡</div><div style="font-family:'Outfit',sans-serif;font-weight:700;font-size:1rem;color:var(--text);margin-bottom:0.25rem;">30-Min Callback</div><p style="font-size:0.85rem;color:var(--text-mid);">We respond to every inquiry within 30 minutes during clinic hours.</p></div>
+        <div class="stat-box"><div class="stat-icon">🎯</div><div style="font-family:'Outfit',sans-serif;font-weight:700;font-size:1rem;color:var(--text);margin-bottom:0.25rem;">Personalized Plan</div><p style="font-size:0.85rem;color:var(--text-mid);">Every patient gets a customized treatment plan based on their unique condition.</p></div>
+        <div class="stat-box"><div class="stat-icon">🔒</div><div style="font-family:'Outfit',sans-serif;font-weight:700;font-size:1rem;color:var(--text);margin-bottom:0.25rem;">100% Confidential</div><p style="font-size:0.85rem;color:var(--text-mid);">Your health information is completely private and secure with us.</p></div>
+        <div class="stat-box"><div class="stat-icon">🏡</div><div style="font-family:'Outfit',sans-serif;font-weight:700;font-size:1rem;color:var(--text);margin-bottom:0.25rem;">Home Visits</div><p style="font-size:0.85rem;color:var(--text-mid);">Can't come to us? We'll come to you anywhere in Gurugram.</p></div>
+      </div>
+    </div>
+
+    <!-- QUICK CONTACT -->
+    <div style="margin-top:3rem;">
+      <div class="text-center reveal"><h3 style="font-family:'Outfit',sans-serif;font-size:1.3rem;font-weight:700;color:var(--text);">Or Reach Us Directly</h3></div>
+      <div class="quick-contact">
+        <a href="tel:+919311642999" class="qc-card reveal"><div class="qc-icon">📞</div><div class="qc-title">Phone (Primary)</div><div class="qc-val">+91 93116 42999</div></a>
+        <a href="tel:+917050002000" class="qc-card reveal" style="transition-delay:.1s"><div class="qc-icon">📞</div><div class="qc-title">Phone (Secondary)</div><div class="qc-val">+91 70500 02000</div></a>
+        <a href="https://wa.me/919311642999" target="_blank" class="qc-card reveal" style="transition-delay:.2s"><div class="qc-icon">💬</div><div class="qc-title">WhatsApp</div><div class="qc-val">+91 93116 42999</div></a>
+        <a href="mailto:ceo@aarogita.com" class="qc-card reveal" style="transition-delay:.3s"><div class="qc-icon">✉️</div><div class="qc-title">Email</div><div class="qc-val">ceo@aarogita.com</div></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div><div class="footer-logo">BRC <span>Clinic</span></div><p class="footer-desc">Book your appointment today. Open all 7 days. Home visits available.</p><div class="footer-social"><a href="https://instagram.com/biophysiotherapy" target="_blank" class="social-icon">📸</a><a href="https://wa.me/919311642999" target="_blank" class="social-icon">💬</a><a href="tel:+919311642999" class="social-icon">📞</a></div></div>
+    <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul><li><a href="tel:+919311642999">📞 +91 93116 42999</a></li><li><a href="tel:+917050002000">📞 +91 70500 02000</a></li><li><a href="mailto:ceo@aarogita.com">✉️ ceo@aarogita.com</a></li><li><a href="#">📍 342P, Basement, near Medicity, Sector 38, Gurugram</a></li></ul></div>
+    <div class="footer-col"><h4>Legal</h4><ul><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms.html">Terms & Conditions</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><p>© 2025 BRC Clinic – Pain, Spine & Joint Rehab. All rights reserved. | 342P, Basement, near Medicity, Islampur Village, Sector 38, Gurugram, Haryana 122001</p></div>
+</footer>
+
+<a href="https://wa.me/919311642999" target="_blank" id="whatsapp-btn">💬</a>
+<a href="tel:+919311642999" id="call-btn">📞</a>
+<button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<div id="toast"></div>
+<script src="js/main.js"></script>
+<script>
+function submitMainForm(e){
+  e.preventDefault();
+  const first=document.getElementById('mFirst').value;
+  const last=document.getElementById('mLast').value;
+  const phone=document.getElementById('mPhone').value;
+  const service=document.getElementById('mService').value;
+  const duration=document.getElementById('mDuration').value||'Not specified';
+  const prev=document.getElementById('mPrev').value||'None';
+  const msg=document.getElementById('mMessage').value;
+  const home=document.getElementById('mHomeVisit').checked;
+  const first_time=document.getElementById('mFirstTime').checked;
+  const wa=encodeURIComponent(`🏥 BRC Clinic Appointment Request\n\nName: ${first} ${last}\nPhone: ${phone}\nService: ${service}\nProblem Duration: ${duration}\nPrev. Treatment: ${prev}\nHome Visit: ${home?'Yes':'No'}\nFirst Visit: ${first_time?'Yes':'No'}\n\nDescription: ${msg}`);
+  window.open(`https://wa.me/919311642999?text=${wa}`,'_blank');
+  document.querySelectorAll('.step')[0].classList.remove('active');
+  document.querySelectorAll('.step')[0].classList.add('done');
+  document.querySelectorAll('.step')[1].classList.add('done');
+  document.querySelectorAll('.step')[2].classList.add('active');
+  const t=document.getElementById('toast');
+  if(t){t.textContent='✅ Appointment request sent via WhatsApp! We will call you back shortly.';t.style.transform='translateX(-50%) translateY(0)';setTimeout(()=>t.style.transform='translateX(-50%) translateY(80px)',5000);}
+  e.target.reset();
+}
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Health Blog – BRC Clinic Gurugram | Tips for Pain, Spine & Holistic Healing</title>
+  <meta name="description" content="Expert health articles by Dr. Arpita Shefali. Tips on back pain, acupuncture, fertility, weight loss, natural healing and more from BRC Clinic Gurugram."/>
+  <link rel="canonical" href="https://brcclinic.in/blog.html"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    .blog-filter { display:flex;gap:0.75rem;flex-wrap:wrap;margin:2rem 0; }
+    .filter-btn { padding:0.45rem 1rem;border-radius:var(--r-full);border:1.5px solid var(--border);font-size:0.85rem;font-weight:600;color:var(--text-mid);background:var(--white);transition:var(--transition-fast);cursor:pointer; }
+    .filter-btn:hover,.filter-btn.active { background:var(--primary);color:var(--white);border-color:var(--primary); }
+    .blog-grid { display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.75rem;margin-top:2rem; }
+    .blog-card { background:var(--white);border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--border);transition:var(--transition); }
+    .blog-card:hover { transform:translateY(-6px);box-shadow:var(--shadow-lg); }
+    .blog-img { width:100%;height:200px;object-fit:cover;background:linear-gradient(135deg,var(--primary),var(--accent));display:flex;align-items:center;justify-content:center;font-size:4rem;color:white; }
+    .blog-body { padding:1.5rem; }
+    .blog-cat { display:inline-block;background:var(--secondary-light);color:var(--secondary-dark);padding:0.2rem 0.65rem;border-radius:var(--r-full);font-size:0.75rem;font-weight:700;margin-bottom:0.75rem; }
+    .blog-title { font-family:'Outfit',sans-serif;font-weight:700;font-size:1.05rem;color:var(--text);margin-bottom:0.5rem;line-height:1.4; }
+    .blog-excerpt { font-size:0.875rem;color:var(--text-mid);line-height:1.65;margin-bottom:1rem; }
+    .blog-meta { display:flex;align-items:center;justify-content:space-between;font-size:0.78rem;color:var(--text-light);padding-top:1rem;border-top:1px solid var(--border); }
+    .blog-author { display:flex;align-items:center;gap:0.5rem; }
+    .blog-avatar { width:28px;height:28px;border-radius:50%;background:var(--primary);display:flex;align-items:center;justify-content:center;color:white;font-size:0.7rem;font-weight:700; }
+    .read-more { color:var(--primary);font-weight:700;font-size:0.875rem;display:inline-flex;align-items:center;gap:0.25rem;transition:gap 0.3s; }
+    .blog-card:hover .read-more { gap:0.5rem; }
+    .featured-article { background:linear-gradient(135deg,var(--primary),var(--accent));border-radius:var(--r-xl);padding:3rem;color:white;display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center;margin-bottom:3rem; }
+    .featured-label { background:rgba(255,255,255,0.2);display:inline-block;padding:0.3rem 0.75rem;border-radius:var(--r-full);font-size:0.75rem;font-weight:700;letter-spacing:1px;margin-bottom:1rem; }
+    .featured-title { font-family:'Outfit',sans-serif;font-size:1.6rem;font-weight:800;margin-bottom:0.75rem;line-height:1.3; }
+    .featured-excerpt { font-size:0.95rem;opacity:0.85;line-height:1.7;margin-bottom:1.5rem; }
+    .newsletter-box { background:var(--cream2);border:1px solid var(--border-light);border-radius:var(--r-xl);padding:2.5rem;text-align:center;margin-top:4rem; }
+    @media(max-width:768px){.featured-article{grid-template-columns:1fr;}.blog-grid{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body>
+<div id="cursor-dot"></div><div id="cursor-ring"></div><div id="scroll-progress"></div>
+<div id="loading-screen"><div class="loading-logo">BRC <span>Clinic</span></div><div class="loading-bar-wrap"><div class="loading-bar"></div></div><p class="loading-text">Loading Blog...</p></div>
+<div id="cookie-bar"><p>🍪 We use cookies. <a href="privacy-policy.html">Learn more</a></p><div class="cookie-btns"><button class="btn-cookie-accept" id="cookieAccept">Accept</button><button class="btn-cookie-decline" id="cookieDecline">Decline</button></div></div>
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><div class="nav-logo-icon">B</div><div class="nav-logo-text">BRC <span>Clinic</span></div></a>
+    <ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="conditions.html">Conditions</a></li><li><a href="blog.html" class="active">Blog</a></li><li><a href="testimonials.html">Reviews</a></li><li><a href="contact.html">Contact</a></li></ul>
+    <div class="nav-actions"><button class="btn-lang" id="langToggle">हिं / EN</button><button class="btn-theme" id="themeToggle">🌙</button><a href="appointment.html" class="btn-nav-cta">📅 Book Now</a></div>
+    <div id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<div id="menu-overlay"></div>
+<div id="mobile-menu"><div class="mobile-menu-links"><a href="index.html">🏠 Home</a><a href="about.html">👩‍⚕️ About</a><a href="services.html">💊 Services</a><a href="conditions.html">🩺 Conditions</a><a href="blog.html">📝 Blog</a><a href="testimonials.html">⭐ Reviews</a><a href="appointment.html">📅 Book Appointment</a><a href="contact.html">📞 Contact</a></div></div>
+
+<div class="page-hero">
+  <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Health Blog</span></div>
+  <h1>Health & <span style="color:var(--secondary)">Wellness Blog</span></h1>
+  <p>Expert insights from Dr. Arpita Shefali on pain management, holistic healing, naturopathy and more.</p>
+</div>
+
+<section class="section" style="background:var(--cream)">
+  <div class="container">
+
+    <!-- FEATURED -->
+    <div class="featured-article reveal">
+      <div>
+        <div class="featured-label">⭐ FEATURED ARTICLE</div>
+        <div class="featured-title">5 Proven Acupuncture Techniques That Eliminate Chronic Back Pain Without Surgery</div>
+        <div class="featured-excerpt">Millions of Indians suffer from chronic back pain, often told that surgery is their only option. Dr. Arpita Shefali reveals the 5 most effective acupuncture techniques that have helped over 25,000+ patients find lasting relief naturally.</div>
+        <a href="#" class="btn-cta-white" style="display:inline-flex;align-items:center;gap:0.5rem;">📖 Read Full Article →</a>
+      </div>
+      <div style="display:flex;justify-content:center;align-items:center;font-size:8rem;opacity:0.3;">🦴</div>
+    </div>
+
+    <!-- FILTER -->
+    <div class="blog-filter">
+      <button class="filter-btn active" onclick="filterBlog('all',this)">All Articles</button>
+      <button class="filter-btn" onclick="filterBlog('pain',this)">🦴 Pain & Spine</button>
+      <button class="filter-btn" onclick="filterBlog('acupuncture',this)">🪡 Acupuncture</button>
+      <button class="filter-btn" onclick="filterBlog('naturopathy',this)">🌿 Naturopathy</button>
+      <button class="filter-btn" onclick="filterBlog('fertility',this)">🧬 Fertility</button>
+      <button class="filter-btn" onclick="filterBlog('mental',this)">🧠 Mental Health</button>
+      <button class="filter-btn" onclick="filterBlog('lifestyle',this)">⚖️ Lifestyle</button>
+    </div>
+
+    <!-- BLOG GRID -->
+    <div class="blog-grid" id="blogGrid">
+      <div class="blog-card reveal" data-cat="pain">
+        <div class="blog-img">🦴</div>
+        <div class="blog-body">
+          <span class="blog-cat">Pain & Spine</span>
+          <div class="blog-title">Slip Disc: Symptoms, Causes & How to Avoid Surgery Through Holistic Treatment</div>
+          <div class="blog-excerpt">Slip disc doesn't always require surgery. Learn how acupuncture and physiotherapy can heal herniated discs naturally.</div>
+          <a href="#" class="read-more">Read More →</a>
+          <div class="blog-meta"><div class="blog-author"><div class="blog-avatar">DA</div> Dr. Arpita Shefali</div><span>5 min read</span></div>
+        </div>
+      </div>
+      <div class="blog-card reveal" data-cat="acupuncture" style="transition-delay:.1s">
+        <div class="blog-img">🪡</div>
+        <div class="blog-body">
+          <span class="blog-cat">Acupuncture</span>
+          <div class="blog-title">What is Master Tung Acupuncture and Why It Works Faster Than Classic Acupuncture</div>
+          <div class="blog-excerpt">Master Tung's acupuncture system is one of the most powerful healing traditions. Here's why it's so effective for chronic conditions.</div>
+          <a href="#" class="read-more">Read More →</a>
+          <div class="blog-meta"><div class="blog-author"><div class="blog-avatar">DA</div> Dr. Arpita Shefali</div><span>7 min read</span></div>
+        </div>
+      </div>
+      <div class="blog-card reveal" data-cat="fertility" style="transition-delay:.2s">
+        <div class="blog-img">🧬</div>
+        <div class="blog-body">
+          <span class="blog-cat">Fertility</span>
+          <div class="blog-title">How Acupuncture & Naturopathy Can Double Your IVF Success Chances</div>
+          <div class="blog-excerpt">Scientific evidence shows that acupuncture before and during IVF significantly improves implantation rates. Dr. Arpita explains how.</div>
+          <a href="#" class="read-more">Read More →</a>
+          <div class="blog-meta"><div class="blog-author"><div class="blog-avatar">DA</div> Dr. Arpita Shefali</div><span>8 min read</span></div>
+        </div>
+      </div>
+      <div class="blog-card reveal" data-cat="mental" style="transition-delay:.1s">
+        <div class="blog-img">🧠</div>
+        <div class="blog-body">
+          <span class="blog-cat">Mental Health</span>
+          <div class="blog-title">Beating Anxiety & Insomnia Without Sleeping Pills: A Neurotherapy Approach</div>
+          <div class="blog-excerpt">Millions rely on sleeping pills for insomnia, unaware of the long-term damage. Neurotherapy offers a safe, lasting solution.</div>
+          <a href="#" class="read-more">Read More →</a>
+          <div class="blog-meta"><div class="blog-author"><div class="blog-avatar">DA</div> Dr. Arpita Shefali</div><span>6 min read</span></div>
+        </div>
+      </div>
+      <div class="blog-card reveal" data-cat="naturopathy" style="transition-delay:.2s">
+        <div class="blog-img">🌿</div>
+        <div class="blog-body">
+          <span class="blog-cat">Naturopathy</span>
+          <div class="blog-title">The 5 Elements of Holistic Health: How Balancing Chakras & Meridians Heals the Body</div>
+          <div class="blog-excerpt">Ancient wisdom meets modern science. Dr. Arpita explains the five elements approach to complete body-mind healing.</div>
+          <a href="#" class="read-more">Read More →</a>
+          <div class="blog-meta"><div class="blog-author"><div class="blog-avatar">DA</div> Dr. Arpita Shefali</div><span>9 min read</span></div>
+        </div>
+      </div>
+      <div class="blog-card reveal" data-cat="lifestyle" style="transition-delay:.3s">
+        <div class="blog-img">⚖️</div>
+        <div class="blog-body">
+          <span class="blog-cat">Lifestyle</span>
+          <div class="blog-title">Why Crash Diets Fail and How Acupuncture + Naturopathy Achieves Lasting Weight Loss</div>
+          <div class="blog-excerpt">Weight loss is about more than calories. Discover the holistic approach that addresses metabolism, hormones and lifestyle together.</div>
+          <a href="#" class="read-more">Read More →</a>
+          <div class="blog-meta"><div class="blog-author"><div class="blog-avatar">DA</div> Dr. Arpita Shefali</div><span>6 min read</span></div>
+        </div>
+      </div>
+      <div class="blog-card reveal" data-cat="pain" style="transition-delay:.1s">
+        <div class="blog-img">🦵</div>
+        <div class="blog-body">
+          <span class="blog-cat">Pain & Spine</span>
+          <div class="blog-title">Knee Replacement Surgery vs. Holistic Treatment: What 25,000+ Patients Taught Us</div>
+          <div class="blog-excerpt">Many patients scheduled for knee replacement have avoided surgery completely. Here's what makes holistic treatment work.</div>
+          <a href="#" class="read-more">Read More →</a>
+          <div class="blog-meta"><div class="blog-author"><div class="blog-avatar">DA</div> Dr. Arpita Shefali</div><span>7 min read</span></div>
+        </div>
+      </div>
+      <div class="blog-card reveal" data-cat="acupuncture" style="transition-delay:.2s">
+        <div class="blog-img">✨</div>
+        <div class="blog-body">
+          <span class="blog-cat">Acupuncture</span>
+          <div class="blog-title">Fire Cupping & Gua Sha: Ancient Chinese Therapies That Modern Medicine Is Now Validating</div>
+          <div class="blog-excerpt">Once dismissed as pseudoscience, modern research now confirms the powerful effects of cupping and Gua Sha for pain and healing.</div>
+          <a href="#" class="read-more">Read More →</a>
+          <div class="blog-meta"><div class="blog-author"><div class="blog-avatar">DA</div> Dr. Arpita Shefali</div><span>5 min read</span></div>
+        </div>
+      </div>
+      <div class="blog-card reveal" data-cat="lifestyle" style="transition-delay:.3s">
+        <div class="blog-img">🩺</div>
+        <div class="blog-body">
+          <span class="blog-cat">Lifestyle</span>
+          <div class="blog-title">Tinnitus: Why That Ringing in Your Ears Could Be a Sign of a Deeper Imbalance</div>
+          <div class="blog-excerpt">Tinnitus is rarely just an ear problem. Dr. Arpita explains the root causes and how acupuncture provides remarkable relief.</div>
+          <a href="#" class="read-more">Read More →</a>
+          <div class="blog-meta"><div class="blog-author"><div class="blog-avatar">DA</div> Dr. Arpita Shefali</div><span>5 min read</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NEWSLETTER -->
+    <div class="newsletter-box reveal">
+      <div class="section-label" style="justify-content:center;">Stay Informed</div>
+      <h3 style="font-family:'Outfit',sans-serif;font-weight:800;font-size:1.5rem;color:var(--primary);margin-bottom:0.5rem;">Get Weekly Health Tips from Dr. Arpita</h3>
+      <p style="font-size:0.925rem;color:var(--text-mid);margin-bottom:1.5rem;">No spam. Just practical, expert health advice delivered to your WhatsApp.</p>
+      <a href="https://wa.me/919311642999?text=Hello!%20I%20would%20like%20to%20subscribe%20to%20health%20tips%20from%20BRC%20Clinic." target="_blank" class="btn-primary" style="display:inline-flex;gap:0.5rem;">💬 Subscribe via WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div><div class="footer-logo">BRC <span>Clinic</span></div><p class="footer-desc">Expert health articles and holistic healing insights from Dr. Arpita Shefali.</p><div class="footer-social"><a href="https://instagram.com/biophysiotherapy" target="_blank" class="social-icon">📸</a><a href="https://wa.me/919311642999" target="_blank" class="social-icon">💬</a></div></div>
+    <div class="footer-col"><h4>Blog Categories</h4><ul><li><a href="#">Pain & Spine</a></li><li><a href="#">Acupuncture</a></li><li><a href="#">Naturopathy</a></li><li><a href="#">Fertility</a></li><li><a href="#">Mental Health</a></li><li><a href="#">Lifestyle</a></li></ul></div>
+    <div class="footer-col"><h4>Clinic</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="appointment.html">Book Appointment</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul><li><a href="tel:+919311642999">📞 +91 93116 42999</a></li><li><a href="mailto:ceo@aarogita.com">✉️ ceo@aarogita.com</a></li><li><a href="contact.html">📍 342P, Basement, near Medicity, Islampur Village, Sector 38, Gurugram, Haryana 122001</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><p>© 2025 BRC Clinic – Pain, Spine & Joint Rehab. All rights reserved. | 342P, Basement, near Medicity, Islampur Village, Sector 38, Gurugram, Haryana 122001</p></div>
+</footer>
+<a href="https://wa.me/919311642999" target="_blank" id="whatsapp-btn">💬</a>
+<a href="tel:+919311642999" id="call-btn">📞</a>
+<button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<div id="toast"></div>
+<script src="js/main.js"></script>
+<script>
+function filterBlog(cat,btn){
+  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.blog-card').forEach(card=>{
+    if(cat==='all'||card.dataset.cat===cat){card.style.display='block';}
+    else{card.style.display='none';}
+  });
+}
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Conditions Treated | BRC Clinic – Pain, Spine & Joint Rehab</title>
+  <meta name="description" content="Explore the comprehensive list of conditions we treat organically including Spondylitis, Slip Disc, Parkinson's, Tinnitus & more at BRC Clinic."/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<!-- CURSOR -->
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">B</div>
+      <div class="nav-logo-text">BRC <span>Clinic</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="nav-dropdown">
+        <a href="services.html">Services ▾</a>
+        <div class="nav-dropdown-menu">
+          <a href="services.html#acupuncture">Acupuncture</a>
+          <a href="services.html#physiotherapy">Physiotherapy</a>
+          <a href="services.html">All Services →</a>
+        </div>
+      </li>
+      <li><a href="conditions.html" class="active">Conditions</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="testimonials.html">Reviews</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="btn-theme" id="themeToggle" title="Toggle Dark/Light Mode">🌙</button>
+      <a href="appointment.html" class="btn-nav-cta">📅 Book Now</a>
+    </div>
+    <div id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<!-- ── PAGE HERO ── -->
+<div class="page-hero">
+  <h1>Conditions Treated</h1>
+  <p>An interactive guide to the problems we diagnose by their root cause.</p>
+  <div class="breadcrumb">
+    <a href="index.html">Home</a> <span>/</span> Conditions
+  </div>
+</div>
+
+<!-- ── INTERACTIVE BODY MAP SECTION ── -->
+<section class="section">
+  <div class="container">
+    <div class="text-center">
+      <div class="section-label">Interactive Diagnosis</div>
+      <h2 class="section-title">Where does it <span class="accent">hurt?</span></h2>
+      <p class="section-desc">Click on a body part to see the conditions we treat and therapies we offer.</p>
+    </div>
+
+    <div class="body-map-container">
+      <div class="map-visual">
+        <!-- Minimalistic SVG Body Map -->
+        <svg viewBox="0 0 200 400" class="body-svg">
+          <!-- Head -->
+          <circle cx="100" cy="40" r="25" class="map-part" data-title="Head & Brain" data-desc="Neurological disorders, migraines, mental health, and sensory issues." data-treatments="Stroke Rehab, Parkinson's Support, Tinnitus, Insomnia, Migraine, Anxiety, Depression, Coma Rehab, Hearing Loss"/>
+          <!-- Neck -->
+          <rect x="85" y="65" width="30" height="20" class="map-part" data-title="Neck & Cervical Spine" data-desc="Neck pain, stiffness, and nerve compression." data-treatments="Cervical Spondylitis, Neck Pain, Whiplash, Posture Correction"/>
+          <!-- Shoulders -->
+          <path d="M 40 85 Q 100 80 160 85 L 160 110 L 40 110 Z" class="map-part" data-title="Shoulders & Upper Back" data-desc="Joint inflammation, muscle tension, and mobility issues." data-treatments="Frozen Shoulder, Thoracic Spondylitis, Muscle Strain"/>
+          <!-- Arms & Hands -->
+          <rect x="30" y="110" width="20" height="120" rx="10" class="map-part" data-title="Arms & Hands" data-desc="Nerve issues, joint pain, and numbness." data-treatments="Peripheral Neuropathy, Numbness, Tingling Sensation, Arthritis"/>
+          <rect x="150" y="110" width="20" height="120" rx="10" class="map-part" data-title="Arms & Hands" data-desc="Nerve issues, joint pain, and numbness." data-treatments="Peripheral Neuropathy, Numbness, Tingling Sensation, Arthritis"/>
+          <!-- Torso/Organs -->
+          <rect x="60" y="110" width="80" height="100" class="map-part" data-title="Torso & Internal Organs" data-desc="Metabolic, gut, and hormonal issues." data-treatments="IBS, Leaky Gut, Diabetes Support, Thyroid, Heart & BP, Weight Management, Low Immunity"/>
+          <!-- Lower Back / Pelvis -->
+          <path d="M 60 210 L 140 210 L 130 250 L 70 250 Z" class="map-part" data-title="Lower Back & Pelvis" data-desc="Spine conditions, reproductive health, and chronic pain." data-treatments="Lumbar Spondylitis, Slip Disc, Herniation, Sciatica, PCOD/PCOS, Fertility (M/F), IVF Support"/>
+          <!-- Legs -->
+          <rect x="70" y="250" width="25" height="130" rx="10" class="map-part" data-title="Legs & Knees" data-desc="Joint wear, balance issues, and surgery avoidance." data-treatments="Knee Pain, Knee Replacement Avoidance, Osteoarthritis, Old Age Stability, Varicose Veins"/>
+          <rect x="105" y="250" width="25" height="130" rx="10" class="map-part" data-title="Legs & Knees" data-desc="Joint wear, balance issues, and surgery avoidance." data-treatments="Knee Pain, Knee Replacement Avoidance, Osteoarthritis, Old Age Stability, Varicose Veins"/>
+        </svg>
+      </div>
+      <div class="map-info">
+        <div id="map-info-placeholder" class="map-info-placeholder">
+          <em>Select a body part on the left to view related treatments.</em>
+        </div>
+        <div id="map-info-content" style="display:none;"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-bottom">
+    <p>© 2025 BRC Clinic – Pain, Spine & Joint Rehab. All rights reserved. | 342P, Basement, Near Medicity, Islampur Village, Sector 38, Gurugram – 122001</p>
+    <div class="footer-bottom-links">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="sitemap.xml">Sitemap</a>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<a href="https://wa.me/919311642999" target="_blank" id="whatsapp-btn" title="Chat on WhatsApp">💬</a>
+<a href="tel:+919311642999" id="call-btn" title="Call Us">📞</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact BRC Clinic – Sector 38, Gurugram | +91 93116 42999</title>
+  <meta name="description" content="Contact BRC Clinic in Sector 38, Gurugram. Call +91 93116 42999 or +91 70500 02000. Open 7 days including holidays. Near Medanta. WhatsApp available."/>
+  <link rel="canonical" href="https://brcclinic.in/contact.html"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    .contact-hero-cards { display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1.25rem;margin:3rem 0; }
+    .chc { background:var(--white);border:1px solid var(--border);border-radius:var(--r-lg);padding:2rem 1.5rem;text-align:center;transition:var(--transition); }
+    .chc:hover { transform:translateY(-4px);box-shadow:var(--shadow-md);border-color:var(--secondary); }
+    .chc-icon { font-size:2.2rem;margin-bottom:0.75rem; }
+    .chc-label { font-size:0.75rem;font-weight:700;color:var(--text-light);text-transform:uppercase;letter-spacing:1px;margin-bottom:0.4rem; }
+    .chc-value { font-family:'Outfit',sans-serif;font-weight:700;color:var(--primary);font-size:0.95rem;line-height:1.4; }
+    .chc-value a { color:inherit; }
+    .contact-main-grid { display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start; }
+    .contact-form-box { background:var(--white);border-radius:var(--r-xl);padding:2.5rem;box-shadow:var(--shadow-lg);border:1px solid var(--border); }
+    .hours-table { width:100%;border-collapse:collapse;margin-top:1rem; }
+    .hours-table tr { border-bottom:1px solid var(--border); }
+    .hours-table tr:last-child { border-bottom:none; }
+    .hours-table td { padding:0.65rem 0;font-size:0.875rem;color:var(--text-mid); }
+    .hours-table td:first-child { font-weight:600;color:var(--text); }
+    .hours-table td:last-child { text-align:right; }
+    .open-badge { background:rgba(13,115,119,0.1);color:var(--accent);padding:0.15rem 0.55rem;border-radius:var(--r-full);font-size:0.75rem;font-weight:700; }
+    @media(max-width:768px){.contact-main-grid{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body>
+<div id="cursor-dot"></div><div id="cursor-ring"></div><div id="scroll-progress"></div>
+<div id="loading-screen"><div class="loading-logo">BRC <span>Clinic</span></div><div class="loading-bar-wrap"><div class="loading-bar"></div></div><p class="loading-text">Loading...</p></div>
+<div id="cookie-bar"><p>🍪 We use cookies. <a href="privacy-policy.html">Learn more</a></p><div class="cookie-btns"><button class="btn-cookie-accept" id="cookieAccept">Accept</button><button class="btn-cookie-decline" id="cookieDecline">Decline</button></div></div>
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><div class="nav-logo-icon">B</div><div class="nav-logo-text">BRC <span>Clinic</span></div></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="conditions.html">Conditions</a></li><li><a href="blog.html">Blog</a></li><li><a href="testimonials.html">Reviews</a></li><li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="nav-actions"><button class="btn-lang" id="langToggle">हिं / EN</button><button class="btn-theme" id="themeToggle">🌙</button><a href="appointment.html" class="btn-nav-cta">📅 Book Now</a></div>
+    <div id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<div id="menu-overlay"></div>
+<div id="mobile-menu"><div class="mobile-menu-links"><a href="index.html">🏠 Home</a><a href="about.html">👩‍⚕️ About</a><a href="services.html">💊 Services</a><a href="conditions.html">🩺 Conditions</a><a href="blog.html">📝 Blog</a><a href="testimonials.html">⭐ Reviews</a><a href="appointment.html">📅 Book Appointment</a><a href="contact.html">📞 Contact</a></div></div>
+
+<div class="page-hero">
+  <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Contact Us</span></div>
+  <h1>Contact <span style="color:var(--secondary)">BRC Clinic</span></h1>
+  <p>We're open 7 days a week including holidays. Reach us by call, WhatsApp, email or visit us in Sector 38, Gurugram.</p>
+</div>
+
+<section class="section" style="background:var(--cream)">
+  <div class="container">
+    <div class="contact-hero-cards">
+      <div class="chc reveal"><div class="chc-icon">📞</div><div class="chc-label">Phone</div><div class="chc-value"><a href="tel:+919311642999">+91 93116 42999</a><br/><a href="tel:+917050002000">+91 70500 02000</a></div></div>
+      <div class="chc reveal" style="transition-delay:.1s"><div class="chc-icon">💬</div><div class="chc-label">WhatsApp</div><div class="chc-value"><a href="https://wa.me/919311642999" target="_blank">+91 93116 42999</a></div></div>
+      <div class="chc reveal" style="transition-delay:.2s"><div class="chc-icon">✉️</div><div class="chc-label">Email</div><div class="chc-value"><a href="mailto:ceo@aarogita.com">ceo@aarogita.com</a><br/><a href="mailto:aarogita12345@gmail.com" style="font-size:0.82rem;">aarogita12345@gmail.com</a></div></div>
+      <div class="chc reveal" style="transition-delay:.3s"><div class="chc-icon">📍</div><div class="chc-label">Address</div><div class="chc-value" style="font-size:0.85rem;">342P, Basement, near Medicity, Islampur Village, Sector 38, Gurugram, Haryana 122001</div></div>
+      <div class="chc reveal" style="transition-delay:.4s"><div class="chc-icon">⏰</div><div class="chc-label">Hours</div><div class="chc-value">Open All 7 Days<br/>Incl. Govt. Holidays</div></div>
+      <div class="chc reveal" style="transition-delay:.5s"><div class="chc-icon">🏡</div><div class="chc-label">Home Visit</div><div class="chc-value">Available in Gurugram<br/>& Nearby Areas</div></div>
+    </div>
+
+    <div class="contact-main-grid">
+      <div class="reveal-left">
+        <!-- MAP -->
+        <div class="map-wrap" style="height:320px;margin-bottom:2rem;">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.8765432109!2d77.0266!3d28.4595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d18f3b6e3d7b9%3A0x2b76c4e8f9a12345!2sSector%2038%2C%20Gurugram%2C%20Haryana%20122001!5e0!3m2!1sen!2sin!4v1234567890" allowfullscreen="" loading="lazy" title="BRC Clinic Location"></iframe>
+        </div>
+        <!-- HOURS -->
+        <div style="background:var(--white);border-radius:var(--r-lg);padding:1.5rem;border:1px solid var(--border);">
+          <h3 style="font-family:'Outfit',sans-serif;font-weight:700;color:var(--primary);margin-bottom:0.5rem;">⏰ Clinic Hours</h3>
+          <table class="hours-table">
+            <tr><td>Monday</td><td><span class="open-badge">Open</span></td></tr>
+            <tr><td>Tuesday</td><td><span class="open-badge">Open</span></td></tr>
+            <tr><td>Wednesday</td><td><span class="open-badge">Open</span></td></tr>
+            <tr><td>Thursday</td><td><span class="open-badge">Open</span></td></tr>
+            <tr><td>Friday</td><td><span class="open-badge">Open</span></td></tr>
+            <tr><td>Saturday</td><td><span class="open-badge">Open</span></td></tr>
+            <tr><td>Sunday</td><td><span class="open-badge">Open</span></td></tr>
+            <tr><td>Government Holidays</td><td><span class="open-badge">Open</span></td></tr>
+            <tr><td>Festival Holidays</td><td><span class="open-badge">Open</span></td></tr>
+          </table>
+          <p style="margin-top:1rem;font-size:0.8rem;color:var(--text-light);">Call us for specific timings: <a href="tel:+919311642999" style="color:var(--primary);font-weight:600;">+91 93116 42999</a></p>
+        </div>
+        <!-- SOCIAL -->
+        <div style="background:var(--white);border-radius:var(--r-lg);padding:1.5rem;border:1px solid var(--border);margin-top:1.25rem;">
+          <h3 style="font-family:'Outfit',sans-serif;font-weight:700;color:var(--primary);margin-bottom:1rem;">📱 Follow Us</h3>
+          <div style="display:flex;flex-direction:column;gap:0.75rem;">
+            <a href="https://instagram.com/biophysiotherapy" target="_blank" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem;background:var(--cream);border-radius:var(--r-sm);color:var(--text-mid);font-size:0.9rem;">📸 <strong>@biophysiotherapy</strong> on Instagram</a>
+            <a href="https://facebook.com" target="_blank" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem;background:var(--cream);border-radius:var(--r-sm);color:var(--text-mid);font-size:0.9rem;">👥 <strong>HealthyBeing bio PhysioTherapy</strong> on Facebook</a>
+            <a href="https://share.google/w5H9oS7P2W6dzjVcu" target="_blank" style="display:flex;align-items:center;gap:0.75rem;padding:0.75rem;background:var(--cream);border-radius:var(--r-sm);color:var(--text-mid);font-size:0.9rem;">📍 View our <strong>Google Business Profile</strong></a>
+          </div>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <form class="contact-form-box" id="contactForm" onsubmit="sendContact(event)">
+          <h3 style="font-family:'Outfit',sans-serif;font-weight:800;font-size:1.4rem;color:var(--text);margin-bottom:0.5rem;">📬 Send Us a Message</h3>
+          <p style="font-size:0.875rem;color:var(--text-mid);margin-bottom:1.5rem;">We respond within 30 minutes during clinic hours.</p>
+          <div class="form-group"><label for="cName">Full Name *</label><input type="text" id="cName" placeholder="Your full name" required/></div>
+          <div class="form-grid-2">
+            <div class="form-group"><label for="cPhone">Phone *</label><input type="tel" id="cPhone" placeholder="+91 XXXXX XXXXX" required/></div>
+            <div class="form-group"><label for="cEmail">Email</label><input type="email" id="cEmail" placeholder="your@email.com"/></div>
+          </div>
+          <div class="form-group"><label for="cSubject">Subject</label><input type="text" id="cSubject" placeholder="How can we help you?"/></div>
+          <div class="form-group"><label for="cMessage">Message *</label><textarea id="cMessage" rows="5" placeholder="Describe your condition, query or anything you'd like us to know..." required></textarea></div>
+          <button type="submit" class="btn-submit">📬 Send Message</button>
+          <div style="margin-top:1.5rem;display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;">
+            <a href="tel:+919311642999" style="display:flex;align-items:center;justify-content:center;gap:0.5rem;padding:0.75rem;background:var(--primary-pale);border-radius:var(--r-md);font-weight:600;font-size:0.875rem;color:var(--primary);">📞 Call Us</a>
+            <a href="https://wa.me/919311642999" target="_blank" style="display:flex;align-items:center;justify-content:center;gap:0.5rem;padding:0.75rem;background:#e8f8ed;border-radius:var(--r-md);font-weight:600;font-size:0.875rem;color:#1a7a38;">💬 WhatsApp</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- HOW TO REACH -->
+    <div style="margin-top:3rem;background:var(--white);border-radius:var(--r-xl);padding:2.5rem;border:1px solid var(--border);" class="reveal">
+      <h3 style="font-family:'Outfit',sans-serif;font-weight:800;font-size:1.3rem;color:var(--primary);margin-bottom:1.5rem;">🗺️ How to Reach BRC Clinic</h3>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1.25rem;">
+        <div style="padding:1.25rem;background:var(--cream);border-radius:var(--r-md);"><div style="font-size:1.5rem;margin-bottom:0.5rem;">🚇</div><h4 style="font-family:'Outfit',sans-serif;font-weight:700;color:var(--text);margin-bottom:0.25rem;">By Metro</h4><p style="font-size:0.85rem;color:var(--text-mid);">Nearest Metro: Sector 38 or HUDA City Centre (Yellow Line). Short auto/cab ride to clinic.</p></div>
+        <div style="padding:1.25rem;background:var(--cream);border-radius:var(--r-md);"><div style="font-size:1.5rem;margin-bottom:0.5rem;">🚗</div><h4 style="font-family:'Outfit',sans-serif;font-weight:700;color:var(--text);margin-bottom:0.25rem;">By Car / Cab</h4><p style="font-size:0.85rem;color:var(--text-mid);">Search "BRC Physio Clinic Sector 38 Gurugram" on Google Maps. Parking available nearby.</p></div>
+        <div style="padding:1.25rem;background:var(--cream);border-radius:var(--r-md);"><div style="font-size:1.5rem;margin-bottom:0.5rem;">🏥</div><h4 style="font-family:'Outfit',sans-serif;font-weight:700;color:var(--text);margin-bottom:0.25rem;">Landmark</h4><p style="font-size:0.85rem;color:var(--text-mid);">Near Medanta – The Medicity Hospital and HealthyBeing, Islampur Village, Sector 38, Gurugram.</p></div>
+        <div style="padding:1.25rem;background:var(--cream);border-radius:var(--r-md);"><div style="font-size:1.5rem;margin-bottom:0.5rem;">🏙️</div><h4 style="font-family:'Outfit',sans-serif;font-weight:700;color:var(--text);margin-bottom:0.25rem;">From Delhi</h4><p style="font-size:0.85rem;color:var(--text-mid);">30–40 mins from South Delhi via NH-48. Cab/auto available from Cyber City, DLF areas.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div><div class="footer-logo">BRC <span>Clinic</span></div><p class="footer-desc">Advanced holistic healing center in Gurugram. Open all 7 days including holidays.</p><div class="footer-social"><a href="https://instagram.com/biophysiotherapy" target="_blank" class="social-icon">📸</a><a href="https://wa.me/919311642999" target="_blank" class="social-icon">💬</a><a href="tel:+919311642999" class="social-icon">📞</a></div></div>
+    <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="conditions.html">Conditions</a></li><li><a href="appointment.html">Book Appointment</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul><li><a href="tel:+919311642999">📞 +91 93116 42999</a></li><li><a href="tel:+917050002000">📞 +91 70500 02000</a></li><li><a href="mailto:ceo@aarogita.com">✉️ ceo@aarogita.com</a></li><li><a href="#">📍 342P, Basement, near Medicity, Islampur Village, Sector 38, Gurugram, Haryana 122001</a></li></ul></div>
+    <div class="footer-col"><h4>Legal</h4><ul><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms.html">Terms & Conditions</a></li><li><a href="sitemap.xml">Sitemap</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><p>© 2025 BRC Clinic – Pain, Spine & Joint Rehab. All rights reserved. | 342P, Basement, near Medicity, Islampur Village, Sector 38, Gurugram, Haryana 122001</p></div>
+</footer>
+
+<a href="https://wa.me/919311642999" target="_blank" id="whatsapp-btn">💬</a>
+<a href="tel:+919311642999" id="call-btn">📞</a>
+<button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<div id="toast"></div>
+<script src="js/main.js"></script>
+<script>
+function sendContact(e){
+  e.preventDefault();
+  const name=document.getElementById('cName').value;
+  const phone=document.getElementById('cPhone').value;
+  const subject=document.getElementById('cSubject').value||'General Query';
+  const msg=document.getElementById('cMessage').value;
+  const wa=encodeURIComponent(`Hello BRC Clinic!\n\nName: ${name}\nPhone: ${phone}\nSubject: ${subject}\nMessage: ${msg}`);
+  window.open(`https://wa.me/919311642999?text=${wa}`,'_blank');
+  const t=document.getElementById('toast');
+  if(t){t.textContent='✅ Redirecting to WhatsApp! We\'ll respond shortly.';t.style.transform='translateX(-50%) translateY(0)';setTimeout(()=>t.style.transform='translateX(-50%) translateY(80px)',4000);}
+  e.target.reset();
+}
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BRC Clinic – Pain, Spine & Joint Rehab | Gurugram | Dr. Arpita Shefali</title>
+  <meta name="description" content="BRC Clinic in Gurugram offers advanced holistic treatment for pain, spine & joint issues. Led by Dr. Arpita Shefali (15+ yrs). 25,550+ patients healed. Book appointment today!"/>
+  <meta name="keywords" content="BRC Clinic Gurugram, pain management Gurgaon, spine rehab Gurugram, Dr Arpita Shefali, acupuncture Gurugram, physiotherapy Gurugram, joint pain treatment"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://brcclinic.in/"/>
+  <!-- Open Graph -->
+  <meta property="og:title" content="BRC Clinic – Pain, Spine & Joint Rehab | Gurugram"/>
+  <meta property="og:description" content="Advanced holistic healing for pain, spine & joint issues. 15+ years experience, 25,550+ patients healed."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://brcclinic.in/"/>
+  <meta property="og:image" content="images/hero-bg.png"/>
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "BRC Clinic – Pain, Spine & Joint Rehab",
+    "alternateName": "BRC Physio Clinic",
+    "url": "https://brcclinic.in",
+    "telephone": ["+919311642999","+917050002000"],
+    "email": "ceo@aarogita.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "342P, Basement, near Medicity, Islampur Village, Sector 38",
+      "addressLocality": "Gurugram",
+      "addressRegion": "Haryana",
+      "postalCode": "122001",
+      "addressCountry": "IN"
+    },
+    "geo": {"@type":"GeoCoordinates","latitude":"28.4312","longitude":"77.0266"},
+    "openingHours": "Mo-Su 09:00-20:00",
+    "priceRange": "₹₹",
+    "medicalSpecialty": ["Physiotherapy","Acupuncture","Rehabilitation","Pain Management"],
+    "aggregateRating": {"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"1"},
+    "physician": {
+      "@type":"Physician",
+      "name":"Dr. Arpita Shefali",
+      "medicalSpecialty":"Physical Medicine and Rehabilitation"
+    }
+  }
+  </script>
+</head>
+<body>
+
+<!-- CURSOR -->
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+
+<!-- SCROLL PROGRESS -->
+<div id="scroll-progress"></div>
+
+<!-- LOADING SCREEN -->
+<div id="loading-screen">
+  <div class="loading-logo">BRC <span>Clinic</span></div>
+  <div class="loading-bar-wrap"><div class="loading-bar"></div></div>
+  <p class="loading-text">Healing with Science &amp; Nature...</p>
+</div>
+
+<!-- COOKIE CONSENT -->
+<div id="cookie-bar">
+  <p>🍪 We use cookies to improve your experience. <a href="privacy-policy.html">Learn more</a></p>
+  <div class="cookie-btns">
+    <button class="btn-cookie-accept" id="cookieAccept">Accept</button>
+    <button class="btn-cookie-decline" id="cookieDecline">Decline</button>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">B</div>
+      <div class="nav-logo-text">BRC <span>Clinic</span></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="nav-dropdown">
+        <a href="services.html">Services ▾</a>
+        <div class="nav-dropdown-menu">
+          <a href="services.html#acupuncture">Acupuncture & Acupressure</a>
+          <a href="services.html#physiotherapy">Physiotherapy</a>
+          <a href="services.html#naturopathy">Naturopathy & Yoga</a>
+          <a href="services.html#fertility">Fertility & IVF Support</a>
+          <a href="services.html#neurotherapy">Neurotherapy</a>
+          <a href="services.html#pain">Pain Management</a>
+          <a href="services.html">All Services →</a>
+        </div>
+      </li>
+      <li><a href="conditions.html">Conditions</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="testimonials.html">Reviews</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="btn-lang" id="langToggle" title="Switch Language">हिं / EN</button>
+      <button class="btn-theme" id="themeToggle" title="Toggle Dark/Light Mode">🌙</button>
+      <a href="appointment.html" class="btn-nav-cta">📅 Book Now</a>
+    </div>
+    <div id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div id="menu-overlay"></div>
+<div id="mobile-menu">
+  <div class="mobile-menu-links">
+    <a href="index.html">🏠 Home</a>
+    <a href="about.html">👩‍⚕️ About Dr. Arpita</a>
+    <a href="services.html">💊 Services</a>
+    <a href="conditions.html">🩺 Conditions Treated</a>
+    <a href="blog.html">📝 Blog</a>
+    <a href="testimonials.html">⭐ Testimonials</a>
+    <a href="appointment.html">📅 Book Appointment</a>
+    <a href="contact.html">📞 Contact</a>
+  </div>
+  <div class="mobile-menu-divider"></div>
+  <div class="mobile-contact-info">
+    <a href="tel:+919311642999">📞 +91 93116 42999</a>
+    <a href="https://wa.me/919311642999" target="_blank">💬 WhatsApp Us</a>
+    <a href="mailto:ceo@aarogita.com">✉️ ceo@aarogita.com</a>
+  </div>
+  <div style="margin-top:1.5rem;">
+    <a href="appointment.html" class="btn-primary" style="width:100%;justify-content:center;">📅 Book Appointment</a>
+  </div>
+</div>
+
+<!-- ── HERO ── -->
+<section class="hero" id="home">
+  <div class="hero-content hero-minimal">
+    <h1 class="hero-title">
+      Healing.<br/>Redefined.
+    </h1>
+    <p class="hero-desc">
+      Advanced holistic therapy for pain, spine, and joints.<br/>No surgery. Just science and nature.
+    </p>
+    <div class="hero-actions" style="justify-content: center;">
+      <a href="appointment.html" class="btn-hero-primary">Book Appointment</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── TRUST STRIP ── -->
+<div class="trust-strip">
+  <div class="trust-strip-inner">
+    <div class="trust-item"><span class="icon">🇺🇸</span> US FDA-Approved Equipment</div>
+    <div class="trust-divider"></div>
+    <div class="trust-item"><span class="icon">🏆</span> India's Most Trusted Healthcare Award 2021</div>
+    <div class="trust-divider"></div>
+    <div class="trust-item"><span class="icon">🌿</span> Non-Surgical Approach</div>
+    <div class="trust-divider"></div>
+    <div class="trust-item"><span class="icon">🏡</span> Home Visit Available</div>
+    <div class="trust-divider"></div>
+    <div class="trust-item"><span class="icon">📅</span> Open All Days (Govt. Holidays too)</div>
+  </div>
+</div>
+
+<!-- ── STATS SECTION ── -->
+<section class="stats-section">
+  <div class="stats-grid">
+    <div class="stat-box reveal">
+      <div class="stat-icon">🧑‍⚕️</div>
+      <div class="stat-num" data-count="25550" data-suffix="+">0</div>
+      <div class="stat-label">Patients Successfully Healed</div>
+    </div>
+    <div class="stat-box reveal" style="transition-delay:0.15s">
+      <div class="stat-icon">⏳</div>
+      <div class="stat-num" data-count="15" data-suffix="+">0</div>
+      <div class="stat-label">Years of Clinical Experience</div>
+    </div>
+    <div class="stat-box reveal" style="transition-delay:0.3s">
+      <div class="stat-icon">💊</div>
+      <div class="stat-num" data-count="35" data-suffix="+">0</div>
+      <div class="stat-label">Advanced Therapies Offered</div>
+    </div>
+    <div class="stat-box reveal" style="transition-delay:0.45s">
+      <div class="stat-icon">🏥</div>
+      <div class="stat-num" data-count="4" data-suffix=" Countries">0</div>
+      <div class="stat-label">Equipment Source Countries</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SERVICES SECTION ── -->
+<section class="section services-section" id="services">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="section-label">What We Offer</div>
+      <h2 class="section-title">Our <span class="accent">Healing</span> Services</h2>
+      <p class="section-desc">A comprehensive range of advanced, non-invasive therapies designed to treat the root cause — not just the symptoms.</p>
+      <div style="margin-top:1rem;">
+        <span class="home-visit-badge">🏡 Home Visit Available for All Services</span>
+      </div>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-icon">🪡</div>
+        <h3>Acupuncture & Electroacupuncture</h3>
+        <p>Classic & Master Tung Acupuncture techniques with needle-free options available for pain relief and organ healing.</p>
+        <a href="services.html#acupuncture" class="service-card-link">Learn More →</a>
+      </div>
+      <div class="service-card reveal" style="transition-delay:0.1s">
+        <div class="service-icon">🤲</div>
+        <h3>Physiotherapy & Rehab</h3>
+        <p>Comprehensive physiotherapy for musculoskeletal disorders, stroke rehab, post-surgery recovery and more.</p>
+        <a href="services.html#physiotherapy" class="service-card-link">Learn More →</a>
+      </div>
+      <div class="service-card reveal" style="transition-delay:0.2s">
+        <div class="service-icon">🌿</div>
+        <h3>Naturopathy & Yoga</h3>
+        <p>Holistic healing combining traditional naturopathy with modern yogic sciences for complete wellness.</p>
+        <a href="services.html#naturopathy" class="service-card-link">Learn More →</a>
+      </div>
+      <div class="service-card reveal" style="transition-delay:0.3s">
+        <div class="service-icon">🧬</div>
+        <h3>Fertility & IVF Support</h3>
+        <p>Advanced alternative therapies to optimize fertility and maximize IVF success rates using scientific devices.</p>
+        <a href="services.html#fertility" class="service-card-link">Learn More →</a>
+      </div>
+      <div class="service-card reveal" style="transition-delay:0.1s">
+        <div class="service-icon">🧠</div>
+        <h3>Neurotherapy & Hypnotherapy</h3>
+        <p>Specialized interventions for neurological conditions, anxiety, depression, stress and psychological wellness.</p>
+        <a href="services.html#neurotherapy" class="service-card-link">Learn More →</a>
+      </div>
+      <div class="service-card reveal" style="transition-delay:0.2s">
+        <div class="service-icon">🔥</div>
+        <h3>Fire Cupping & Gua Sha</h3>
+        <p>Traditional Chinese therapies for deep tissue healing, improved circulation and pain relief.</p>
+        <a href="services.html#cupping" class="service-card-link">Learn More →</a>
+      </div>
+      <div class="service-card reveal" style="transition-delay:0.3s">
+        <div class="service-icon">⚖️</div>
+        <h3>Weight Management</h3>
+        <p>Lifestyle-based weight loss, nutrition counselling and metabolism optimization for lasting results.</p>
+        <a href="services.html#weight" class="service-card-link">Learn More →</a>
+      </div>
+      <div class="service-card reveal" style="transition-delay:0.4s">
+        <div class="service-icon">🔬</div>
+        <h3>Biofeedback & Pulse Diagnosis</h3>
+        <p>US FDA-approved diagnostic equipment for precise, non-invasive root-cause analysis of chronic problems.</p>
+        <a href="services.html#diagnosis" class="service-card-link">Learn More →</a>
+      </div>
+      <div class="service-card reveal" style="transition-delay:0.5s">
+        <div class="service-icon">🛡️</div>
+        <h3>Avoid Surgery Program</h3>
+        <p>Non-surgical alternatives for knee/hip replacement, spine surgery, eye, ENT procedures. Subject to evaluation.</p>
+        <a href="services.html#avoid-surgery" class="service-card-link">Learn More →</a>
+      </div>
+      <div class="service-card reveal" style="transition-delay:0.1s">
+        <div class="service-icon">🩸</div>
+        <h3>Auto-Immune & Immunity</h3>
+        <p>Supportive care for Ankylosing Spondylitis, Fibromyalgia, Low Immunity and Chronic Fatigue.</p>
+        <a href="services.html#immunity" class="service-card-link">Learn More →</a>
+      </div>
+      <div class="service-card reveal" style="transition-delay:0.2s">
+        <div class="service-icon">🛌</div>
+        <h3>Post-Surgery & Coma Rehab</h3>
+        <p>Specialized rehabilitation for post-surgery complications, coma recovery and old age instability.</p>
+        <a href="services.html#rehab" class="service-card-link">Learn More →</a>
+      </div>
+    </div>
+    <div class="text-center" style="margin-top:3rem;">
+      <a href="services.html" class="btn-primary">View All 35+ Services →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── WHY CHOOSE US ── -->
+<section class="section why-section" id="why">
+  <div class="container">
+    <div class="why-grid">
+      <div class="reveal-left">
+        <div class="section-label">Why BRC Clinic</div>
+        <h2 class="section-title">India's Most <span class="accent">Trusted</span> Holistic Healing Center</h2>
+        <p class="section-desc">We go beyond symptom relief — we find and treat the root cause using a unique blend of ancient wisdom and modern science.</p>
+        <div class="why-features">
+          <div class="why-feature">
+            <div class="why-feature-icon">🔬</div>
+            <div>
+              <h4>US FDA-Approved Equipment</h4>
+              <p>World-class medical devices from Germany, Japan, China & India for precise, safe and effective treatment.</p>
+            </div>
+          </div>
+          <div class="why-feature">
+            <div class="why-feature-icon">🎯</div>
+            <div>
+              <h4>Root Cause Diagnosis</h4>
+              <p>Advanced diagnostics including Biofeedback, Nadi Pariksha & Pulse Diagnosis to identify the exact source of your problem.</p>
+            </div>
+          </div>
+          <div class="why-feature">
+            <div class="why-feature-icon">🌿</div>
+            <div>
+              <h4>Holistic 5-Element Approach</h4>
+              <p>Balances chakras, meridians, doshas, bioelectricity, aura and immunity for complete body-mind healing.</p>
+            </div>
+          </div>
+          <div class="why-feature">
+            <div class="why-feature-icon">🏡</div>
+            <div>
+              <h4>Home Visit Available</h4>
+              <p>Can't travel? We come to you. Professional treatment at your doorstep in Gurugram and nearby areas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="why-visual reveal-right">
+        <div class="why-visual-card">
+          <div class="why-visual-badge">🏆 Award Winning Clinic</div>
+          <h3>Holistic Healing That Goes Beyond Bone, Muscle & Nerve</h3>
+          <p>Our Advanced Physical Therapy can target any organ and heal from within using scientific devices to enhance the power of traditional therapies.</p>
+          <div class="why-visual-stats">
+            <div class="why-vis-stat">
+              <div class="why-vis-stat-num">25K+</div>
+              <div class="why-vis-stat-label">Patients Healed</div>
+            </div>
+            <div class="why-vis-stat">
+              <div class="why-vis-stat-num">95%</div>
+              <div class="why-vis-stat-label">Success Rate</div>
+            </div>
+            <div class="why-vis-stat">
+              <div class="why-vis-stat-num">35+</div>
+              <div class="why-vis-stat-label">Therapies</div>
+            </div>
+            <div class="why-vis-stat">
+              <div class="why-vis-stat-num">4.9★</div>
+              <div class="why-vis-stat-label">Google Rating</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── BEFORE / AFTER RESULTS ── -->
+<section class="section ba-section" id="results">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="section-label">Real Results</div>
+      <h2 class="section-title">See The <span class="accent">Difference</span></h2>
+      <p class="section-desc">Drag the slider to see actual patient recovery progress through our holistic treatments.</p>
+    </div>
+    <div class="ba-container reveal" id="ba-slider">
+      <div class="ba-slider">
+        <!-- Placeholder Images for now -->
+        <img src="images/after-placeholder.jpg" alt="After Treatment" class="ba-image after" onerror="this.src='';this.style.background='#F5E6D3';this.style.display='block';"/>
+        <img src="images/before-placeholder.jpg" alt="Before Treatment" class="ba-image before" onerror="this.src='';this.style.background='#86868B';this.style.display='block';"/>
+        <div class="ba-handle"></div>
+        <div class="ba-labels">
+          <span class="ba-label">Before</span>
+          <span class="ba-label">After</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── DOCTOR SECTION ── -->
+<section class="section doctor-section" id="doctor">
+  <div class="container">
+    <div class="doctor-grid">
+      <div class="reveal-left doctor-img-wrap">
+        <img src="images/dr-arpita.jpg" alt="Dr. Arpita Shefali – BRC Clinic Gurugram" class="doctor-img" onerror="this.src='';this.style.background='linear-gradient(135deg,#E8F4FD,#0D7377)';this.style.display='flex';"/>
+        <div class="doctor-cert-badge">
+          <div class="num">15+</div>
+          <p>Years of Clinical Excellence</p>
+        </div>
+      </div>
+      <div class="reveal-right doctor-info">
+        <div class="section-label">Meet The Expert</div>
+        <h2 class="doctor-name">Dr. Arpita Shefali</h2>
+        <div class="doctor-quals">
+          <span class="qual-tag">BNYS</span>
+          <span class="qual-tag">MD (Acu)</span>
+          <span class="qual-tag">DHNS</span>
+          <span class="qual-tag">DECE</span>
+          <span class="qual-tag">Neurotherapist</span>
+          <span class="qual-tag">Hypno Therapist</span>
+          <span class="qual-tag">Reiki Master</span>
+        </div>
+        <p class="doctor-bio">
+          Dr. Arpita Shefali is a multi-disciplinary health expert with over 15 years of clinical experience, combining naturopathy, acupuncture, neurotherapy and advanced physical therapy to deliver results where conventional medicine often falls short. She specializes in treating complex, chronic conditions using a holistic, root-cause approach backed by US FDA-approved diagnostic equipment.
+        </p>
+        <p class="doctor-bio">
+          Her work has been recognized at the highest levels — from the AYUSH Ministry to India's Most Trusted Healthcare Award 2021, and appreciation from cricketing legends and Bollywood icons.
+        </p>
+        <div class="doctor-achievements">
+          <div class="achv-item">
+            <div class="achv-icon">🏛️</div>
+            <div>
+              <strong>AYUSH Ministry Felicitation</strong>
+              <span class="achv-text">Recognized by the Government of India</span>
+            </div>
+          </div>
+          <div class="achv-item">
+            <div class="achv-icon">🏆</div>
+            <div>
+              <strong>Most Trusted Healthcare 2021</strong>
+              <span class="achv-text">India's Most Trusted Healthcare Award</span>
+            </div>
+          </div>
+          <div class="achv-item">
+            <div class="achv-icon">🎬</div>
+            <div>
+              <strong>Endorsed by Amisha Patel</strong>
+              <span class="achv-text">Most Trusted Acupuncture Clinic</span>
+            </div>
+          </div>
+          <div class="achv-item">
+            <div class="achv-icon">🏏</div>
+            <div>
+              <strong>Felicitated by Madan Lal</strong>
+              <span class="achv-text">Coach, Indian Cricket Team</span>
+            </div>
+          </div>
+        </div>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+          <a href="about.html" class="btn-primary">Full Profile →</a>
+          <a href="appointment.html" class="btn-secondary">Book with Dr. Arpita</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TEAM SECTION ── -->
+<section class="section team-section">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="section-label">Our Team</div>
+      <h2 class="section-title">Expert <span class="accent">Therapists</span></h2>
+      <p class="section-desc">Every patient at BRC Clinic is cared for by qualified, experienced and compassionate therapists working under Dr. Arpita's direct supervision.</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card reveal">
+        <div class="team-img-wrap">
+          <img src="images/monika-gola.jpg" alt="Monika Gola – Senior Therapist" class="team-img" onerror="this.style.background='linear-gradient(135deg,#0A3D62,#E8B89A)';"/>
+          <div class="team-card-role">Senior Therapist</div>
+        </div>
+        <div class="team-info">
+          <div class="team-name">Monika Gola</div>
+          <div class="team-qual">Master Diploma in Acupuncture</div>
+          <span class="team-exp">4 Years Experience</span>
+        </div>
+      </div>
+      <div class="team-card reveal" style="transition-delay:0.15s">
+        <div class="team-img-wrap">
+          <div style="width:100%;aspect-ratio:1;background:linear-gradient(135deg,#0A3D62,#0D7377);display:flex;align-items:center;justify-content:center;font-size:4rem;">👨‍⚕️</div>
+          <div class="team-card-role">Senior Therapist</div>
+        </div>
+        <div class="team-info">
+          <div class="team-name">Rohit Tomar</div>
+          <div class="team-qual">Master Diploma in Acupuncture</div>
+          <span class="team-exp">2.5 Years Experience</span>
+        </div>
+      </div>
+      <div class="team-card reveal" style="transition-delay:0.3s">
+        <div class="team-img-wrap">
+          <img src="images/gaurav-kumar.jpg" alt="Gaurav Kumar – Senior Therapist" class="team-img" onerror="this.style.background='linear-gradient(135deg,#0D7377,#0A3D62)';"/>
+          <div class="team-card-role">Senior Therapist</div>
+        </div>
+        <div class="team-info">
+          <div class="team-name">Gaurav Kumar</div>
+          <div class="team-qual">Master Diploma in Acupuncture</div>
+          <span class="team-exp">2.5 Years Experience</span>
+        </div>
+      </div>
+      <div class="team-card reveal" style="transition-delay:0.45s">
+        <div class="team-img-wrap">
+          <img src="images/raviya-mansori.jpg" alt="Raviya Mansori – Junior Therapist" class="team-img" onerror="this.style.background='linear-gradient(135deg,#C9815A,#E8B89A)';"/>
+          <div class="team-card-role">Junior Therapist</div>
+        </div>
+        <div class="team-info">
+          <div class="team-name">Raviya Mansori</div>
+          <div class="team-qual">Master Diploma in Acupuncture</div>
+          <span class="team-exp">1.5 Years Experience</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONDITIONS TREATED ── -->
+<section class="section conditions-section" id="conditions">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="section-label">We Treat</div>
+      <h2 class="section-title">Conditions & <span class="accent">Problems</span> Treated</h2>
+      <p class="section-desc">Through Physiotherapy, Acupuncture, Acupressure, Naturopathy & Rehabilitation — we treat a wide spectrum of conditions.</p>
+    </div>
+    <div class="conditions-cat reveal">
+      <div class="cond-cat-title"><span class="cond-cat-icon">🦴</span> Spine, Joint & Pain Conditions</div>
+      <div class="conditions-grid">
+        <div class="cond-item">Cervical / Lumbar Spondylitis</div>
+        <div class="cond-item">Slip Disc / Disc Bulge / Herniation</div>
+        <div class="cond-item">Neck Pain & Back Pain</div>
+        <div class="cond-item">Sciatica</div>
+        <div class="cond-item">Knee Pain & Hip Pain</div>
+        <div class="cond-item">Arthritis (OA & RA)</div>
+        <div class="cond-item">Frozen Shoulder</div>
+        <div class="cond-item">Sports Injuries</div>
+        <div class="cond-item">Chronic Body Pain</div>
+      </div>
+    </div>
+    <div class="conditions-cat reveal">
+      <div class="cond-cat-title"><span class="cond-cat-icon">🧠</span> Nervous System & Rehabilitation</div>
+      <div class="conditions-grid">
+        <div class="cond-item">Stroke Rehabilitation</div>
+        <div class="cond-item">Paralysis & Nerve Injury</div>
+        <div class="cond-item">Recovery from Coma</div>
+        <div class="cond-item">Parkinson's Disease</div>
+        <div class="cond-item">Peripheral Neuropathy</div>
+        <div class="cond-item">Diabetic Neuropathy</div>
+        <div class="cond-item">Fibromyalgia</div>
+        <div class="cond-item">Multiple Sclerosis</div>
+        <div class="cond-item">Numbness & Tingling</div>
+      </div>
+    </div>
+    <div class="conditions-cat reveal">
+      <div class="cond-cat-title"><span class="cond-cat-icon">🌿</span> Mental Health, Hormonal & Lifestyle</div>
+      <div class="conditions-grid">
+        <div class="cond-item">Stress & Anxiety</div>
+        <div class="cond-item">Depression</div>
+        <div class="cond-item">Insomnia</div>
+        <div class="cond-item">PCOD / PCOS</div>
+        <div class="cond-item">Fertility Support (M/F)</div>
+        <div class="cond-item">IVF Success Support</div>
+        <div class="cond-item">Diabetes Management</div>
+        <div class="cond-item">Thyroid Imbalance</div>
+        <div class="cond-item">Weight Management</div>
+        <div class="cond-item">Tinnitus / Hearing Loss</div>
+        <div class="cond-item">Sinus & Migraine</div>
+        <div class="cond-item">IBS & Gut Health</div>
+      </div>
+    </div>
+    <div class="text-center" style="margin-top:2.5rem;">
+      <a href="conditions.html" class="btn-primary">View All Conditions →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── AWARDS ── -->
+<section class="awards-section" id="awards">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="section-label">Recognition</div>
+      <h2 class="section-title">Awards & <span style="color:var(--gold-light)">Achievements</span></h2>
+      <p class="section-desc" style="color:rgba(255,255,255,0.75)">Recognized by government bodies, industry leaders and celebrated personalities for excellence in healthcare.</p>
+    </div>
+    <div class="awards-grid">
+      <div class="award-card reveal">
+        <div class="award-icon">🏛️</div>
+        <h4>AYUSH Ministry Felicitation</h4>
+        <p>Dr. Arpita has been recognized and felicitated by the Ministry of AYUSH, Government of India.</p>
+      </div>
+      <div class="award-card reveal" style="transition-delay:0.1s">
+        <div class="award-icon">🏆</div>
+        <h4>India's Most Trusted Healthcare Award – 2021</h4>
+        <p>Awarded as India's Most Trusted Healthcare clinic, acknowledging outstanding patient outcomes.</p>
+      </div>
+      <div class="award-card reveal" style="transition-delay:0.2s">
+        <div class="award-icon">🎬</div>
+        <h4>Endorsed by Actress Amisha Patel</h4>
+        <p>Recognized as the Most Trusted Acupuncture & Acupressure Clinic by Bollywood actress Amisha Patel.</p>
+      </div>
+      <div class="award-card reveal" style="transition-delay:0.3s">
+        <div class="award-icon">🏏</div>
+        <h4>Felicitated by Madan Lal</h4>
+        <p>Honored by Mr. Madan Lal, celebrated Coach of the Indian Cricket Team.</p>
+      </div>
+      <div class="award-card reveal" style="transition-delay:0.4s">
+        <div class="award-icon">🚀</div>
+        <h4>Acknowledged by Dr. Vivek Bindra</h4>
+        <p>Recognized by India's famous Motivational Speaker & Startup Guru Dr. Vivek Bindra.</p>
+      </div>
+      <div class="award-card reveal" style="transition-delay:0.5s">
+        <div class="award-icon">🌍</div>
+        <h4>Global Equipment Standards</h4>
+        <p>Equipped with US FDA-approved medical devices from Germany, Japan, China & India for world-class care.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SYMPTOM CHECKER ── -->
+<section class="symptom-section" id="symptom-checker">
+  <div class="symptom-inner">
+    <div class="section-label" style="justify-content:center;">Quick Tool</div>
+    <h2 class="section-title" style="color:var(--primary)">Symptom <span class="accent2">Checker</span></h2>
+    <p class="section-desc">Select your symptoms below and we'll suggest the most relevant services for your condition.</p>
+    <div class="symptom-chips">
+      <button class="symptom-chip" data-services="Acupuncture,Physiotherapy,Pain Management">Back Pain</button>
+      <button class="symptom-chip" data-services="Acupuncture,Neurotherapy,Physiotherapy">Neck Pain</button>
+      <button class="symptom-chip" data-services="Neurotherapy,Hypnotherapy,Naturopathy">Stress / Anxiety</button>
+      <button class="symptom-chip" data-services="Acupuncture,Physiotherapy,Rehabilitation">Knee Pain</button>
+      <button class="symptom-chip" data-services="Fertility Therapy,Acupuncture,Naturopathy">Fertility Issues</button>
+      <button class="symptom-chip" data-services="Hypnotherapy,Neurotherapy,Naturopathy">Insomnia</button>
+      <button class="symptom-chip" data-services="Neurotherapy,Acupuncture,Physiotherapy">Numbness / Tingling</button>
+      <button class="symptom-chip" data-services="Naturopathy,Nutrition Consultation,Weight Loss Therapy">Weight Gain</button>
+      <button class="symptom-chip" data-services="Acupuncture,Naturopathy,Biofeedback Diagnosis">Diabetes / BP</button>
+      <button class="symptom-chip" data-services="Acupuncture,Tinnitus Treatment,ENT Therapy">Tinnitus / Hearing</button>
+      <button class="symptom-chip" data-services="Stroke Rehab,Neurotherapy,Physiotherapy">Stroke / Paralysis</button>
+      <button class="symptom-chip" data-services="Acupuncture,Naturopathy,PCOD Therapy">PCOD / PCOS</button>
+    </div>
+    <div class="symptom-result" id="symptomResult">
+      <h4>Recommended Services for You:</h4>
+      <div class="symptom-result-list" id="symptomResultList"></div>
+      <div style="margin-top:1.25rem;">
+        <a href="appointment.html" class="btn-primary">Book Consultation →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ SECTION ── -->
+<section class="section faq-section" id="faq">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="section-label">Got Questions?</div>
+      <h2 class="section-title">Frequently Asked <span class="accent">Questions</span></h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="faq-q-text">How long does one treatment session last?</span>
+          <span class="faq-arrow">▾</span>
+        </div>
+        <div class="faq-a">Usually one session lasts about 1 hour. In more severe or complex cases, it may extend to 1.5 or 2 hours. The duration depends entirely on the patient's condition and is decided during treatment. Charges remain the same regardless of duration.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="faq-q-text">Do you use needles for acupuncture?</span>
+          <span class="faq-arrow">▾</span>
+        </div>
+        <div class="faq-a">We offer both classic needle acupuncture and needle-free acupressure options. For patients uncomfortable with needles, our Acupressure Pressure-less technique delivers excellent results without any needles or discomfort.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="faq-q-text">Is the treatment safe? Are there any side effects?</span>
+          <span class="faq-arrow">▾</span>
+        </div>
+        <div class="faq-a">Yes, all our treatments are completely non-invasive and safe. We use US FDA-approved equipment and evidence-based techniques. Most patients experience zero side effects. Our approach focuses on natural healing without drugs or surgery.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="faq-q-text">Do you offer home visits?</span>
+          <span class="faq-arrow">▾</span>
+        </div>
+        <div class="faq-a">Yes! We offer home visits in Gurugram and nearby areas. If you or a family member is unable to travel to the clinic, our senior therapists can visit your home. Please call us on +91 93116 42999 or +91 70500 02000 to arrange.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="faq-q-text">Are you open on Sundays and public holidays?</span>
+          <span class="faq-arrow">▾</span>
+        </div>
+        <div class="faq-a">Yes! BRC Clinic is open 7 days a week including Sundays and government/festival holidays. We understand health doesn't follow a calendar, so we are always available for you.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="faq-q-text">Can you really help avoid surgery?</span>
+          <span class="faq-arrow">▾</span>
+        </div>
+        <div class="faq-a">Many of our patients have successfully avoided surgery for knee/hip replacement, spine surgery, and ENT procedures through our holistic treatment approach. However, each case is evaluated individually. We are transparent about what we can and cannot help with — your wellbeing always comes first.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="faq-q-text">How do I book an appointment?</span>
+          <span class="faq-arrow">▾</span>
+        </div>
+        <div class="faq-a">You can book an appointment online via our booking form, call us directly at +91 93116 42999 or +91 70500 02000, or message us on WhatsApp. We are also on Instagram @biophysiotherapy and Facebook (HealthyBeing bio PhysioTherapy).</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TESTIMONIALS ── -->
+<section class="section testimonials-section" id="testimonials">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="section-label">Patient Stories</div>
+      <h2 class="section-title">What Our <span class="accent">Patients</span> Say</h2>
+      <p class="section-desc">Real experiences from real people who found relief and healing at BRC Clinic.</p>
+      <div style="margin-top:0.75rem;">
+        <span style="color:var(--gold);font-size:1.3rem;">★★★★★</span>
+        <span style="color:var(--text-mid);font-size:0.9rem;margin-left:0.5rem;">4.9/5 on Google · 25,550+ Patients Treated</span>
+      </div>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testi-card reveal">
+        <div class="testi-quote">"</div>
+        <p class="testi-text">Dr. Arpita is truly gifted. After years of unbearable back pain and being told surgery was my only option, just 8 sessions at BRC Clinic gave me my life back. I can now walk, exercise, and live pain-free!</p>
+        <div class="testi-rating">★★★★★</div>
+        <div class="testi-author">
+          <div class="testi-avatar">RK</div>
+          <div>
+            <div class="testi-name">Rajesh K.</div>
+            <div class="testi-condition">Slip Disc – Gurugram</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal" style="transition-delay:0.15s">
+        <div class="testi-quote">"</div>
+        <p class="testi-text">After two failed IVF cycles, a friend recommended BRC Clinic. Dr. Arpita's holistic approach worked wonders — our third cycle was successful and we are now blessed with a baby boy!</p>
+        <div class="testi-rating">★★★★★</div>
+        <div class="testi-author">
+          <div class="testi-avatar">PS</div>
+          <div>
+            <div class="testi-name">Priya S.</div>
+            <div class="testi-condition">IVF Support – Delhi</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal" style="transition-delay:0.3s">
+        <div class="testi-quote">"</div>
+        <p class="testi-text">My mother had a stroke and couldn't walk. After consistent rehab sessions at BRC Clinic, she can now walk with support. The team's dedication and Dr. Arpita's expertise is unmatched.</p>
+        <div class="testi-rating">★★★★★</div>
+        <div class="testi-author">
+          <div class="testi-avatar">AM</div>
+          <div>
+            <div class="testi-name">Amit M.</div>
+            <div class="testi-condition">Stroke Rehab – Gurgaon</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center" style="margin-top:2.5rem;">
+      <a href="testimonials.html" class="btn-primary">Read More Reviews →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── APPOINTMENT SECTION ── -->
+<section class="section appt-section" id="appointment">
+  <div class="container">
+    <div class="appt-grid">
+      <div class="appt-info reveal-left">
+        <div class="section-label">Get In Touch</div>
+        <h2 class="section-title">Book Your <span class="accent">Consultation</span></h2>
+        <p>Take the first step towards a pain-free, healthier life. Fill out the form or contact us directly — we respond within minutes!</p>
+        <div class="appt-contact-items">
+          <div class="appt-contact-item">
+            <div class="appt-ci-icon">📞</div>
+            <div>
+              <div class="appt-ci-label">Call Us</div>
+              <div class="appt-ci-val"><a href="tel:+919311642999">+91 93116 42999</a> &nbsp;|&nbsp; <a href="tel:+917050002000">+91 70500 02000</a></div>
+            </div>
+          </div>
+          <div class="appt-contact-item">
+            <div class="appt-ci-icon">💬</div>
+            <div>
+              <div class="appt-ci-label">WhatsApp</div>
+              <div class="appt-ci-val"><a href="https://wa.me/919311642999" target="_blank">+91 93116 42999</a></div>
+            </div>
+          </div>
+          <div class="appt-contact-item">
+            <div class="appt-ci-icon">✉️</div>
+            <div>
+              <div class="appt-ci-label">Email Us</div>
+              <div class="appt-ci-val"><a href="mailto:ceo@aarogita.com">ceo@aarogita.com</a></div>
+            </div>
+          </div>
+          <div class="appt-contact-item">
+            <div class="appt-ci-icon">📍</div>
+            <div>
+              <div class="appt-ci-label">Location</div>
+              <div class="appt-ci-val">342P, Basement, Near Medicity, Islampur Village, Sector 38, Gurugram – 122001</div>
+            </div>
+          </div>
+          <div class="appt-contact-item">
+            <div class="appt-ci-icon">⏰</div>
+            <div>
+              <div class="appt-ci-label">Clinic Hours</div>
+              <div class="appt-ci-val">Monday to Sunday (Open on Govt/Festival holidays)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <form class="appt-form" id="appointmentForm" onsubmit="submitForm(event)">
+          <h3>📅 Book an Appointment</h3>
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="firstName">First Name *</label>
+              <input type="text" id="firstName" placeholder="Your name" required/>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" placeholder="Last name"/>
+            </div>
+          </div>
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="phone">Phone / WhatsApp *</label>
+              <input type="tel" id="phone" placeholder="+91 XXXXX XXXXX" required/>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="your@email.com"/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="service">Service / Problem *</label>
+            <select id="service" required>
+              <option value="">Select a service or condition...</option>
+              <option>Back Pain / Spine Problem</option>
+              <option>Knee / Joint Pain</option>
+              <option>Neck Pain / Cervical</option>
+              <option>Physiotherapy / Rehab</option>
+              <option>Acupuncture / Acupressure</option>
+              <option>Fertility / IVF Support</option>
+              <option>Neurotherapy</option>
+              <option>Stress / Anxiety / Depression</option>
+              <option>Weight Management</option>
+              <option>Diabetes / BP / Thyroid</option>
+              <option>Stroke / Paralysis Rehab</option>
+              <option>Tinnitus / Hearing</option>
+              <option>Home Visit Request</option>
+              <option>Other / Not Listed</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Tell us about your condition</label>
+            <textarea id="message" placeholder="Briefly describe your symptoms, how long you've had the problem, any previous treatments..."></textarea>
+          </div>
+          <div class="form-group" style="display:flex;align-items:flex-start;gap:0.75rem;">
+            <input type="checkbox" id="homeVisit" style="margin-top:0.2rem;width:auto;cursor:pointer;"/>
+            <label for="homeVisit" style="font-size:0.9rem;cursor:pointer;">I need a <strong>Home Visit</strong> (Gurugram / nearby areas)</label>
+          </div>
+          <button type="submit" class="btn-submit">📅 Book Appointment Now</button>
+          <p style="text-align:center;font-size:0.78rem;color:var(--text-light);margin-top:0.75rem;">We will call you back within 30 minutes during clinic hours.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA BANNER ── -->
+<section class="cta-banner">
+  <div class="container">
+    <h2>Start Your Healing Journey Today</h2>
+    <p>Don't let pain control your life. Over 25,550 patients have found lasting relief at BRC Clinic. You could be next.</p>
+    <div class="cta-banner-actions">
+      <a href="appointment.html" class="btn-cta-white">📅 Book Appointment</a>
+      <a href="tel:+919311642999" class="btn-cta-outline">📞 Call +91 93116 42999</a>
+      <a href="https://wa.me/919311642999" target="_blank" class="btn-cta-outline">💬 WhatsApp Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT / MAP ── -->
+<section class="section contact-section" id="contact">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="section-label">Find Us</div>
+      <h2 class="section-title">Visit <span class="accent">BRC Clinic</span></h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-details reveal-left">
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <div class="contact-item-label">Address</div>
+            <div class="contact-item-value">342P, Basement, Near Medicity, Islampur Village, Sector 38, Gurugram, Haryana – 122001</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div>
+            <div class="contact-item-label">Phone Numbers</div>
+            <div class="contact-item-value">
+              <a href="tel:+919311642999">+91 93116 42999</a><br/>
+              <a href="tel:+917050002000">+91 70500 02000</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">💬</div>
+          <div>
+            <div class="contact-item-label">WhatsApp</div>
+            <div class="contact-item-value"><a href="https://wa.me/919311642999" target="_blank">+91 93116 42999</a></div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <div>
+            <div class="contact-item-label">Email</div>
+            <div class="contact-item-value">
+              <a href="mailto:ceo@aarogita.com">ceo@aarogita.com</a><br/>
+              <a href="mailto:aarogita12345@gmail.com">aarogita12345@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">⏰</div>
+          <div>
+            <div class="contact-item-label">Clinic Hours</div>
+            <div class="contact-item-value">Open 7 Days a Week<br/>Including Govt. & Festival Holidays</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📱</div>
+          <div>
+            <div class="contact-item-label">Social Media</div>
+            <div class="contact-item-value">
+              <a href="https://instagram.com/biophysiotherapy" target="_blank">Instagram: @biophysiotherapy</a><br/>
+              <a href="https://facebook.com" target="_blank">Facebook: HealthyBeing bio PhysioTherapy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="map-wrap reveal-right">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.8765432109!2d77.0266!3d28.4595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d18f3b6e3d7b9%3A0x2b76c4e8f9a12345!2sSector%2038%2C%20Gurugram%2C%20Haryana%20122001!5e0!3m2!1sen!2sin!4v1234567890"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="BRC Clinic Location – Sector 38, Gurugram">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">BRC <span>Clinic</span></div>
+      <p class="footer-desc">Advanced holistic healing center in Gurugram offering non-surgical, root-cause treatments for pain, spine, joint and chronic conditions. Led by Dr. Arpita Shefali with 15+ years of experience.</p>
+      <div class="footer-social">
+        <a href="https://instagram.com/biophysiotherapy" target="_blank" class="social-icon" title="Instagram">📸</a>
+        <a href="https://facebook.com" target="_blank" class="social-icon" title="Facebook">👥</a>
+        <a href="https://wa.me/919311642999" target="_blank" class="social-icon" title="WhatsApp">💬</a>
+        <a href="tel:+919311642999" class="social-icon" title="Call">📞</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Dr. Arpita</a></li>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="conditions.html">Conditions Treated</a></li>
+        <li><a href="blog.html">Health Blog</a></li>
+        <li><a href="testimonials.html">Patient Reviews</a></li>
+        <li><a href="appointment.html">Book Appointment</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Top Services</h4>
+      <ul>
+        <li><a href="services.html#acupuncture">Acupuncture</a></li>
+        <li><a href="services.html#physiotherapy">Physiotherapy</a></li>
+        <li><a href="services.html#naturopathy">Naturopathy</a></li>
+        <li><a href="services.html#fertility">Fertility Support</a></li>
+        <li><a href="services.html#neurotherapy">Neurotherapy</a></li>
+        <li><a href="services.html#cupping">Fire Cupping</a></li>
+        <li><a href="services.html#avoid-surgery">Avoid Surgery</a></li>
+        <li><a href="services.html#weight">Weight Management</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:+919311642999">📞 +91 93116 42999</a></li>
+        <li><a href="tel:+917050002000">📞 +91 70500 02000</a></li>
+        <li><a href="https://wa.me/919311642999">💬 WhatsApp</a></li>
+        <li><a href="mailto:ceo@aarogita.com">✉️ ceo@aarogita.com</a></li>
+        <li><a href="contact.html">📍 342P, Basement, near Medicity, Islampur Village, Sector 38, Gurugram, Haryana 122001</a></li>
+        <li><a href="privacy-policy.html">🔒 Privacy Policy</a></li>
+        <li><a href="terms.html">📄 Terms & Conditions</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 BRC Clinic – Pain, Spine & Joint Rehab. All rights reserved. | 342P, Basement, near Medicity, Islampur Village, Sector 38, Gurugram, Haryana 122001</p>
+    <div class="footer-bottom-links">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms.html">Terms</a>
+      <a href="sitemap.xml">Sitemap</a>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<a href="https://wa.me/919311642999?text=Hello%20BRC%20Clinic%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" id="whatsapp-btn" title="Chat on WhatsApp">💬</a>
+<a href="tel:+919311642999" id="call-btn" title="Call Us">📞</a>
+<button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to Top">↑</button>
+
+<!-- APPOINTMENT SUCCESS TOAST -->
+<div id="toast" style="position:fixed;bottom:2rem;left:50%;transform:translateX(-50%) translateY(80px);background:var(--accent);color:white;padding:1rem 2rem;border-radius:var(--r-full);font-weight:600;z-index:9999;transition:transform 0.4s ease;box-shadow:0 8px 24px rgba(0,0,0,0.2);white-space:nowrap;">✅ Appointment request sent! We'll call you back shortly.</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy – BRC Clinic Gurugram</title>
+  <meta name="description" content="Privacy Policy for BRC Clinic – Pain, Spine & Joint Rehab, Gurugram. How we collect, use and protect your personal information."/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    .policy-body{max-width:800px;margin:0 auto;padding:3rem 2rem;}
+    .policy-body h2{font-family:'Outfit',sans-serif;font-weight:700;font-size:1.25rem;color:var(--primary);margin:2rem 0 0.75rem;padding-top:1.5rem;border-top:1px solid var(--border);}
+    .policy-body h2:first-of-type{border-top:none;padding-top:0;}
+    .policy-body p,.policy-body li{font-size:0.95rem;color:var(--text-mid);line-height:1.8;margin-bottom:0.5rem;}
+    .policy-body ul{padding-left:1.5rem;margin-bottom:1rem;}
+    .policy-body ul li{list-style:disc;}
+    .policy-body strong{color:var(--text);}
+    .policy-body a{color:var(--primary);text-decoration:underline;}
+    .policy-date{background:var(--primary-pale);border:1px solid var(--border);border-radius:var(--r-md);padding:1rem 1.5rem;margin-bottom:2rem;font-size:0.875rem;color:var(--text-mid);}
+  </style>
+</head>
+<body>
+<div id="cursor-dot"></div><div id="cursor-ring"></div><div id="scroll-progress"></div>
+<div id="loading-screen"><div class="loading-logo">BRC <span>Clinic</span></div><div class="loading-bar-wrap"><div class="loading-bar"></div></div><p class="loading-text">Loading...</p></div>
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><div class="nav-logo-icon">B</div><div class="nav-logo-text">BRC <span>Clinic</span></div></a>
+    <ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li></ul>
+    <div class="nav-actions"><button class="btn-theme" id="themeToggle">🌙</button><a href="appointment.html" class="btn-nav-cta">📅 Book Now</a></div>
+    <div id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<div id="menu-overlay"></div>
+<div id="mobile-menu"><div class="mobile-menu-links"><a href="index.html">🏠 Home</a><a href="services.html">💊 Services</a><a href="appointment.html">📅 Book Appointment</a><a href="contact.html">📞 Contact</a></div></div>
+
+<div class="page-hero" style="background:linear-gradient(135deg,var(--primary),var(--dark));">
+  <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Privacy Policy</span></div>
+  <h1>🔒 Privacy <span style="color:var(--secondary)">Policy</span></h1>
+  <p>How BRC Clinic collects, uses, and protects your personal information.</p>
+</div>
+
+<section style="background:var(--cream);padding:3rem 2rem;">
+  <div class="policy-body">
+    <div class="policy-date">
+      <strong>Last Updated:</strong> April 2025 &nbsp;|&nbsp; <strong>Effective Date:</strong> January 2025<br/>
+      This Privacy Policy applies to the website <strong>brcclinic.in</strong> and all services offered by BRC Clinic – Pain, Spine & Joint Rehab, Gurugram.
+    </div>
+
+    <h2>1. About This Policy</h2>
+    <p>BRC Clinic – Pain, Spine & Joint Rehab ("we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.</p>
+
+    <h2>2. Information We Collect</h2>
+    <p>We may collect the following types of information:</p>
+    <ul>
+      <li><strong>Personal Information:</strong> Name, phone number, email address, age, gender (when you fill our contact or appointment forms)</li>
+      <li><strong>Health Information:</strong> Condition description, symptoms, treatment history (shared voluntarily for appointment purposes)</li>
+      <li><strong>Technical Information:</strong> IP address, browser type, pages visited, time spent (via cookies and analytics)</li>
+      <li><strong>Communication Records:</strong> WhatsApp messages, emails, and call records related to your inquiries</li>
+    </ul>
+
+    <h2>3. How We Use Your Information</h2>
+    <ul>
+      <li>To respond to your appointment requests and inquiries</li>
+      <li>To provide and improve our medical and therapy services</li>
+      <li>To send relevant health information and updates (only if you opt in)</li>
+      <li>To improve our website and user experience</li>
+      <li>To comply with legal and regulatory obligations</li>
+    </ul>
+
+    <h2>4. Health Information Confidentiality</h2>
+    <p>We treat all health-related information shared with us with the strictest confidentiality. Your medical details will never be shared with third parties without your explicit written consent, except as required by law.</p>
+
+    <h2>5. Cookies</h2>
+    <p>Our website uses cookies to enhance your browsing experience. Cookies are small text files stored on your device. We use:</p>
+    <ul>
+      <li><strong>Essential Cookies:</strong> Required for the website to function properly</li>
+      <li><strong>Analytics Cookies:</strong> Help us understand how visitors use our site (via Google Analytics)</li>
+      <li><strong>Preference Cookies:</strong> Remember your language and theme preferences</li>
+    </ul>
+    <p>You can disable cookies in your browser settings. Note that some features may not function properly if cookies are disabled.</p>
+
+    <h2>6. Third-Party Services</h2>
+    <p>We use the following third-party services that may collect data:</p>
+    <ul>
+      <li><strong>Google Analytics:</strong> For website traffic analysis</li>
+      <li><strong>Google Maps:</strong> For displaying our clinic location</li>
+      <li><strong>WhatsApp Business:</strong> For appointment communication</li>
+    </ul>
+    <p>These services have their own privacy policies. We encourage you to review them.</p>
+
+    <h2>7. Data Security</h2>
+    <p>We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. Our website uses HTTPS encryption for all data transmission.</p>
+
+    <h2>8. Data Retention</h2>
+    <p>We retain your personal information only for as long as necessary to provide our services and comply with legal obligations. Health records are maintained per applicable Indian medical regulations.</p>
+
+    <h2>9. Your Rights</h2>
+    <p>Under applicable law, you have the right to:</p>
+    <ul>
+      <li>Access the personal information we hold about you</li>
+      <li>Request correction of inaccurate information</li>
+      <li>Request deletion of your data (subject to legal requirements)</li>
+      <li>Opt out of marketing communications at any time</li>
+      <li>Lodge a complaint with the relevant data protection authority</li>
+    </ul>
+
+    <h2>10. Children's Privacy</h2>
+    <p>Our website is not directed to children under the age of 13. We do not knowingly collect personal information from children. If you believe we have inadvertently collected such information, please contact us immediately.</p>
+
+    <h2>11. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. We will notify you of significant changes by posting the new policy on this page with an updated date. Continued use of our website after changes constitute acceptance of the updated policy.</p>
+
+    <h2>12. Contact Us</h2>
+    <p>If you have any questions about this Privacy Policy or how we handle your data, please contact us:</p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:ceo@aarogita.com">ceo@aarogita.com</a></li>
+      <li><strong>Phone:</strong> <a href="tel:+919311642999">+91 93116 42999</a></li>
+      <li><strong>Address:</strong> BRC Clinic, 342P Basement, Islampur Village, Sector 38, Gurugram, Haryana – 122001</li>
+    </ul>
+
+    <div style="margin-top:2.5rem;padding:1.5rem;background:var(--primary-pale);border-radius:var(--r-md);border:1px solid var(--border);">
+      <p style="margin:0;"><strong>Note:</strong> This website and clinic operate in India and are subject to Indian laws including the Information Technology Act, 2000 and applicable data protection regulations. All disputes are subject to jurisdiction of courts in Gurugram, Haryana.</p>
+    </div>
+
+    <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap;">
+      <a href="index.html" class="btn-primary">← Back to Home</a>
+      <a href="terms.html" class="btn-secondary">Terms & Conditions</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div><div class="footer-logo">BRC <span>Clinic</span></div><p class="footer-desc">Advanced holistic healing in Gurugram. Your health and privacy are our priorities.</p></div>
+    <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="appointment.html">Book Appointment</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="footer-col"><h4>Legal</h4><ul><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms.html">Terms & Conditions</a></li><li><a href="sitemap.xml">Sitemap</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul><li><a href="tel:+919311642999">📞 +91 93116 42999</a></li><li><a href="mailto:ceo@aarogita.com">✉️ ceo@aarogita.com</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><p>© 2025 BRC Clinic – Pain, Spine & Joint Rehab. All rights reserved.</p></div>
+</footer>
+<a href="https://wa.me/919311642999" target="_blank" id="whatsapp-btn">💬</a>
+<a href="tel:+919311642999" id="call-btn">📞</a>
+<button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<div id="toast"></div>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+User-agent: *
+Allow: /
+
+Sitemap: https://brcclinic.in/sitemap.xml
+
+Disallow: /404.html
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services – BRC Clinic Gurugram | Acupuncture, Physiotherapy, Naturopathy & 35+ Therapies</title>
+  <meta name="description" content="35+ advanced holistic therapies at BRC Clinic Gurugram. Acupuncture, Physiotherapy, Naturopathy, Fertility Support, Neurotherapy, Fire Cupping, Biofeedback & more. Near Medanta, Sector 38."/>
+  <link rel="canonical" href="https://brcclinic.in/services.html"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    .service-section-block { margin-bottom:4rem; scroll-margin-top:90px; }
+    .service-section-header { display:flex; align-items:center; gap:1rem; margin-bottom:2rem; padding-bottom:1rem; border-bottom:2px solid var(--secondary-light); }
+    .service-section-icon { width:54px;height:54px;border-radius:var(--r-md);background:linear-gradient(135deg,var(--primary),var(--accent));display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0; }
+    .service-section-header h2 { font-family:'Outfit',sans-serif;font-weight:800;font-size:1.5rem;color:var(--primary); }
+    .service-section-header p { font-size:0.875rem;color:var(--text-mid);margin-top:0.2rem; }
+    .service-detail-grid { display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem; }
+    .sdg-card { background:var(--white);border:1px solid var(--border);border-radius:var(--r-lg);padding:1.75rem 1.5rem;transition:var(--transition);position:relative;overflow:hidden; }
+    .sdg-card::after { content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--secondary),var(--gold));transform:scaleX(0);transition:transform 0.35s ease;transform-origin:left; }
+    .sdg-card:hover { transform:translateY(-5px);box-shadow:var(--shadow-lg);border-color:var(--secondary); }
+    .sdg-card:hover::after { transform:scaleX(1); }
+    .sdg-icon { font-size:2rem;margin-bottom:0.75rem; }
+    .sdg-card h3 { font-family:'Outfit',sans-serif;font-weight:700;font-size:1rem;color:var(--text);margin-bottom:0.5rem; }
+    .sdg-card p { font-size:0.86rem;color:var(--text-mid);line-height:1.65; }
+    .sdg-tag { display:inline-block;margin-top:0.75rem;background:var(--secondary-light);color:var(--secondary-dark);padding:0.25rem 0.65rem;border-radius:var(--r-full);font-size:0.75rem;font-weight:600; }
+    .service-nav { position:sticky;top:76px;z-index:100;background:var(--white);border-bottom:1px solid var(--border);padding:0.75rem 1.5rem; }
+    .service-nav-inner { max-width:1300px;margin:0 auto;display:flex;gap:0.75rem;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none; }
+    .service-nav-inner::-webkit-scrollbar { display:none; }
+    .snav-btn { flex-shrink:0;padding:0.45rem 1rem;border-radius:var(--r-full);border:1.5px solid var(--border);font-size:0.82rem;font-weight:600;color:var(--text-mid);background:var(--cream);transition:var(--transition-fast);white-space:nowrap; }
+    .snav-btn:hover,.snav-btn.active { background:var(--primary);color:var(--white);border-color:var(--primary); }
+    .home-visit-section { background:linear-gradient(135deg,var(--accent),var(--primary));border-radius:var(--r-xl);padding:2.5rem;color:var(--white);text-align:center;margin-top:3rem; }
+    .home-visit-section h3 { font-family:'Outfit',sans-serif;font-size:1.5rem;font-weight:800;margin-bottom:0.75rem; }
+    .home-visit-section p { font-size:0.95rem;opacity:0.9;margin-bottom:1.5rem; }
+  </style>
+</head>
+<body>
+<div id="cursor-dot"></div><div id="cursor-ring"></div><div id="scroll-progress"></div>
+<div id="loading-screen"><div class="loading-logo">BRC <span>Clinic</span></div><div class="loading-bar-wrap"><div class="loading-bar"></div></div><p class="loading-text">Loading Services...</p></div>
+<div id="cookie-bar"><p>🍪 We use cookies. <a href="privacy-policy.html">Learn more</a></p><div class="cookie-btns"><button class="btn-cookie-accept" id="cookieAccept">Accept</button><button class="btn-cookie-decline" id="cookieDecline">Decline</button></div></div>
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><div class="nav-logo-icon">B</div><div class="nav-logo-text">BRC <span>Clinic</span></div></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html" class="active">Services</a></li><li><a href="conditions.html">Conditions</a></li><li><a href="blog.html">Blog</a></li><li><a href="testimonials.html">Reviews</a></li><li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions"><button class="btn-lang" id="langToggle">हिं / EN</button><button class="btn-theme" id="themeToggle">🌙</button><a href="appointment.html" class="btn-nav-cta">📅 Book Now</a></div>
+    <div id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<div id="menu-overlay"></div>
+<div id="mobile-menu"><div class="mobile-menu-links"><a href="index.html">🏠 Home</a><a href="about.html">👩‍⚕️ About</a><a href="services.html">💊 Services</a><a href="conditions.html">🩺 Conditions</a><a href="blog.html">📝 Blog</a><a href="testimonials.html">⭐ Reviews</a><a href="appointment.html">📅 Book Appointment</a><a href="contact.html">📞 Contact</a></div></div>
+
+<div class="page-hero">
+  <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Services</span></div>
+  <h1>Our <span style="color:var(--secondary)">35+ Therapies</span></h1>
+  <p>Advanced holistic treatments using US FDA-approved equipment — non-invasive, non-surgical, root-cause focused.</p>
+  <div style="margin-top:1rem;"><span class="home-visit-badge">🏡 Home Visit Available for All Services</span></div>
+</div>
+
+<!-- STICKY SERVICE NAV -->
+<div class="service-nav">
+  <div class="service-nav-inner">
+    <button class="snav-btn" onclick="scrollTo('acupuncture')">🪡 Acupuncture</button>
+    <button class="snav-btn" onclick="scrollTo('physiotherapy')">🤲 Physiotherapy</button>
+    <button class="snav-btn" onclick="scrollTo('naturopathy')">🌿 Naturopathy</button>
+    <button class="snav-btn" onclick="scrollTo('fertility')">🧬 Fertility</button>
+    <button class="snav-btn" onclick="scrollTo('neurotherapy')">🧠 Neurotherapy</button>
+    <button class="snav-btn" onclick="scrollTo('cupping')">🔥 Cupping & Gua Sha</button>
+    <button class="snav-btn" onclick="scrollTo('pain')">💊 Pain Management</button>
+    <button class="snav-btn" onclick="scrollTo('avoid-surgery')">🛡️ Avoid Surgery</button>
+    <button class="snav-btn" onclick="scrollTo('weight')">⚖️ Weight Management</button>
+    <button class="snav-btn" onclick="scrollTo('diagnosis')">🔬 Diagnosis</button>
+  </div>
+</div>
+
+<section class="section" style="background:var(--cream2)">
+  <div class="container">
+
+    <!-- ACUPUNCTURE -->
+    <div class="service-section-block" id="acupuncture">
+      <div class="service-section-header reveal">
+        <div class="service-section-icon">🪡</div>
+        <div><h2>Acupuncture & Acupressure</h2><p>Classic, Master Tung & Electro-Acupuncture — with needle-free options available</p></div>
+      </div>
+      <div class="service-detail-grid">
+        <div class="sdg-card reveal"><div class="sdg-icon">🪡</div><h3>Classic Acupuncture</h3><p>Traditional Chinese meridian-based acupuncture for pain relief, organ healing and energy balance. Deep, lasting results.</p><span class="sdg-tag">Needle-based</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.1s"><div class="sdg-icon">⚡</div><h3>Electroacupuncture</h3><p>Acupuncture enhanced with micro-electrical stimulation for faster healing, nerve regeneration and pain relief.</p><span class="sdg-tag">Advanced</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.2s"><div class="sdg-icon">👐</div><h3>Acupressure (Needle-Free)</h3><p>Pressure-point healing without needles — ideal for children, needle-phobic patients and seniors.</p><span class="sdg-tag">Needle-Free</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.3s"><div class="sdg-icon">🎯</div><h3>Master Tung Acupuncture</h3><p>Advanced Tung's acupuncture system — highly effective for chronic pain, auto-immune and neurological conditions.</p><span class="sdg-tag">Specialized</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.4s"><div class="sdg-icon">🌸</div><h3>Acupuncture for Beauty</h3><p>Facial rejuvenation, skin glow enhancement and cosmetic acupuncture for anti-aging benefits.</p><span class="sdg-tag">Cosmetic</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.5s"><div class="sdg-icon">💉</div><h3>Weight Loss Acupuncture</h3><p>Targeted acupuncture points to suppress appetite, boost metabolism and support sustainable weight loss.</p><span class="sdg-tag">Wellness</span></div>
+      </div>
+    </div>
+
+    <!-- PHYSIOTHERAPY -->
+    <div class="service-section-block" id="physiotherapy">
+      <div class="service-section-header reveal">
+        <div class="service-section-icon">🤲</div>
+        <div><h2>Physiotherapy & Rehabilitation</h2><p>Evidence-based physical therapy for musculoskeletal, neurological and post-surgical conditions</p></div>
+      </div>
+      <div class="service-detail-grid">
+        <div class="sdg-card reveal"><div class="sdg-icon">🦴</div><h3>Musculoskeletal Physiotherapy</h3><p>Targeted treatment for back pain, neck pain, joint pain, sports injuries and posture correction.</p><span class="sdg-tag">Pain Relief</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.1s"><div class="sdg-icon">🧠</div><h3>Neurological Rehabilitation</h3><p>Specialized rehab for stroke, paralysis, Parkinson's, MS, nerve injuries and coma recovery.</p><span class="sdg-tag">Neuro</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.2s"><div class="sdg-icon">🏥</div><h3>Post-Surgery Rehabilitation</h3><p>Accelerated recovery protocols to restore function, reduce complications and prevent re-injury after surgery.</p><span class="sdg-tag">Post-Op</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.3s"><div class="sdg-icon">👴</div><h3>Geriatric Physiotherapy</h3><p>Specialized care for elderly patients — stability, balance, fall prevention, strength and mobility improvement.</p><span class="sdg-tag">Senior Care</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.4s"><div class="sdg-icon">🏃</div><h3>Sports Physiotherapy</h3><p>Injury assessment, rehabilitation and performance optimization for athletes and active individuals.</p><span class="sdg-tag">Sports</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.5s"><div class="sdg-icon">🏡</div><h3>Home Physiotherapy</h3><p>Professional physiotherapy at your home — ideal for bed-ridden, post-surgical and elderly patients.</p><span class="sdg-tag">Home Visit</span></div>
+      </div>
+    </div>
+
+    <!-- NATUROPATHY -->
+    <div class="service-section-block" id="naturopathy">
+      <div class="service-section-header reveal">
+        <div class="service-section-icon">🌿</div>
+        <div><h2>Naturopathy & Yoga Therapy</h2><p>Holistic healing through nature, food, herbs and yogic sciences</p></div>
+      </div>
+      <div class="service-detail-grid">
+        <div class="sdg-card reveal"><div class="sdg-icon">🌿</div><h3>Classical Naturopathy</h3><p>Hydrotherapy, mud therapy, sun therapy and nature-based treatments for chronic disease management.</p><span class="sdg-tag">Natural</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.1s"><div class="sdg-icon">🧘</div><h3>Yoga Therapy</h3><p>Therapeutic yoga protocols designed for specific health conditions — spine, joints, stress, hormonal balance.</p><span class="sdg-tag">Mind-Body</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.2s"><div class="sdg-icon">🌱</div><h3>Herbal Medicine</h3><p>Evidence-based herbal formulations to support healing, immunity, digestion and hormonal balance.</p><span class="sdg-tag">Herbal</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.3s"><div class="sdg-icon">🥗</div><h3>Nutrition Consultation</h3><p>Personalized diet and nutrition plans to support treatment, manage weight, diabetes, thyroid and gut health.</p><span class="sdg-tag">Diet</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.4s"><div class="sdg-icon">🎵</div><h3>Music Therapy</h3><p>Therapeutic use of sound and music to reduce pain, anxiety, stress and support neurological recovery.</p><span class="sdg-tag">Wellness</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.5s"><div class="sdg-icon">⚡</div><h3>Quantum Energy Therapy</h3><p>Advanced energy medicine using quantum principles to optimize body's bioelectric field and natural healing.</p><span class="sdg-tag">Advanced</span></div>
+      </div>
+    </div>
+
+    <!-- FERTILITY -->
+    <div class="service-section-block" id="fertility">
+      <div class="service-section-header reveal">
+        <div class="service-section-icon">🧬</div>
+        <div><h2>Fertility & IVF Support</h2><p>Advanced alternative therapies to optimize fertility and maximize IVF success rates</p></div>
+      </div>
+      <div class="service-detail-grid">
+        <div class="sdg-card reveal"><div class="sdg-icon">🧬</div><h3>Fertility Enhancement (Male & Female)</h3><p>Acupuncture, naturopathy and advanced therapies to improve fertility naturally and boost reproductive health.</p><span class="sdg-tag">Fertility</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.1s"><div class="sdg-icon">🔬</div><h3>IVF Success Support</h3><p>Advanced protocols using US FDA-approved devices to prepare the body for IVF and improve implantation rates.</p><span class="sdg-tag">IVF</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.2s"><div class="sdg-icon">🌸</div><h3>PCOD / PCOS Treatment</h3><p>Holistic management of PCOD/PCOS through acupuncture, naturopathy and hormonal balancing therapies.</p><span class="sdg-tag">Women's Health</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.3s"><div class="sdg-icon">⚖️</div><h3>Hormonal Imbalance</h3><p>Natural correction of hormonal imbalance — thyroid, estrogen, progesterone, testosterone without synthetic hormones.</p><span class="sdg-tag">Hormonal</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.4s"><div class="sdg-icon">🩸</div><h3>Menstrual Health</h3><p>Treatment for irregular periods, painful menstruation, heavy bleeding and menstrual disorders using natural therapies.</p><span class="sdg-tag">Women's Health</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.5s"><div class="sdg-icon">🧪</div><h3>Advanced Reproductive Diagnostics</h3><p>Non-invasive US FDA-approved diagnostic tools for precise root-cause analysis of fertility challenges.</p><span class="sdg-tag">Diagnosis</span></div>
+      </div>
+    </div>
+
+    <!-- NEUROTHERAPY -->
+    <div class="service-section-block" id="neurotherapy">
+      <div class="service-section-header reveal">
+        <div class="service-section-icon">🧠</div>
+        <div><h2>Neurotherapy & Hypnotherapy</h2><p>Specialized interventions for neurological conditions and psychological wellness</p></div>
+      </div>
+      <div class="service-detail-grid">
+        <div class="sdg-card reveal"><div class="sdg-icon">🧠</div><h3>Neurotherapy</h3><p>Advanced neurological treatment for nerve disorders, peripheral neuropathy, brain-related conditions and cognitive issues.</p><span class="sdg-tag">Neuro</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.1s"><div class="sdg-icon">🌀</div><h3>Hypnotherapy</h3><p>Evidence-based hypnosis for anxiety, phobias, addictions, sleep disorders, weight management and pain control.</p><span class="sdg-tag">Mind Healing</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.2s"><div class="sdg-icon">✨</div><h3>Reiki & Energy Healing</h3><p>Grand Master level Reiki sessions for deep relaxation, stress relief, energy balancing and holistic wellbeing.</p><span class="sdg-tag">Energy</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.3s"><div class="sdg-icon">💊</div><h3>NIBS (Non-Invasive Brain Stimulation)</h3><p>Advanced brain stimulation therapy for stroke recovery, depression, cognitive enhancement and neurological healing.</p><span class="sdg-tag">Advanced</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.4s"><div class="sdg-icon">😴</div><h3>Insomnia & Sleep Therapy</h3><p>Comprehensive treatment for chronic insomnia, sleep disorders and circadian rhythm issues using natural approaches.</p><span class="sdg-tag">Sleep</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.5s"><div class="sdg-icon">💙</div><h3>Mental Health Support</h3><p>Supportive therapy for anxiety, depression, panic attacks, stress and emotional wellbeing without medication dependency.</p><span class="sdg-tag">Wellness</span></div>
+      </div>
+    </div>
+
+    <!-- CUPPING & GUA SHA -->
+    <div class="service-section-block" id="cupping">
+      <div class="service-section-header reveal">
+        <div class="service-section-icon">🔥</div>
+        <div><h2>Fire Cupping, Gua Sha & Moxibustion</h2><p>Traditional Chinese healing arts for deep tissue relief and energy balance</p></div>
+      </div>
+      <div class="service-detail-grid">
+        <div class="sdg-card reveal"><div class="sdg-icon">🔥</div><h3>Fire Cupping</h3><p>Traditional cupping therapy to improve blood circulation, release deep muscle tension and detoxify the body.</p><span class="sdg-tag">TCM</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.1s"><div class="sdg-icon">🌊</div><h3>Gua Sha</h3><p>Scraping therapy to stimulate blood flow, reduce inflammation, relieve chronic pain and boost immunity.</p><span class="sdg-tag">TCM</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.2s"><div class="sdg-icon">🌿</div><h3>Moxibustion</h3><p>Heat therapy using moxa to warm meridians, dispel cold and treat conditions including arthritis, fertility and immunity.</p><span class="sdg-tag">TCM</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.3s"><div class="sdg-icon">💆</div><h3>Therapeutic Massage</h3><p>Deep tissue, relaxation and therapeutic massage to relieve muscle tension, improve circulation and reduce stress.</p><span class="sdg-tag">Massage</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.4s"><div class="sdg-icon">🩹</div><h3>Allergy Treatment</h3><p>Specialized acupuncture and naturopathy protocols to identify and treat root causes of allergic reactions.</p><span class="sdg-tag">Allergy</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.5s"><div class="sdg-icon">🫁</div><h3>Asthma & Sinus Relief</h3><p>Non-pharmaceutical management of asthma, sinusitis and breathing disorders through TCM and naturopathy.</p><span class="sdg-tag">Respiratory</span></div>
+      </div>
+    </div>
+
+    <!-- PAIN MANAGEMENT -->
+    <div class="service-section-block" id="pain">
+      <div class="service-section-header reveal">
+        <div class="service-section-icon">💊</div>
+        <div><h2>Pain Management & Auto-Immune</h2><p>Targeted pain relief and auto-immune disease management without drugs or surgery</p></div>
+      </div>
+      <div class="service-detail-grid">
+        <div class="sdg-card reveal"><div class="sdg-icon">💊</div><h3>Chronic Pain Management</h3><p>Comprehensive pain relief programs for chronic back pain, joint pain, fibromyalgia and widespread body pain.</p><span class="sdg-tag">Pain</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.1s"><div class="sdg-icon">🛡️</div><h3>Auto-Immune Disease Care</h3><p>Holistic management of Ankylosing Spondylitis, Fibromyalgia, Sjogren's Syndrome, Parkinson's, MS and more.</p><span class="sdg-tag">Auto-Immune</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.2s"><div class="sdg-icon">👂</div><h3>Tinnitus Treatment</h3><p>Specialized treatment for tinnitus (ringing in ears) and hearing loss support through acupuncture and neurotherapy.</p><span class="sdg-tag">ENT</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.3s"><div class="sdg-icon">🔴</div><h3>Blood Pressure Management</h3><p>Natural blood pressure regulation through acupuncture, naturopathy, dietary changes and stress reduction.</p><span class="sdg-tag">Cardiac</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.4s"><div class="sdg-icon">🩺</div><h3>Diabetes Supportive Care</h3><p>Integrative support for diabetes management including blood sugar regulation, neuropathy and wound healing.</p><span class="sdg-tag">Diabetes</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.5s"><div class="sdg-icon">💉</div><h3>Pre-Surgery Optimization</h3><p>Lower surgical risk by controlling sugar, BP and inflammation levels before planned surgeries.</p><span class="sdg-tag">Pre-Op</span></div>
+      </div>
+    </div>
+
+    <!-- AVOID SURGERY -->
+    <div class="service-section-block" id="avoid-surgery">
+      <div class="service-section-header reveal">
+        <div class="service-section-icon">🛡️</div>
+        <div><h2>Avoid Surgery Program</h2><p>Non-surgical alternatives for conditions typically treated with invasive procedures — subject to evaluation</p></div>
+      </div>
+      <div class="service-detail-grid">
+        <div class="sdg-card reveal"><div class="sdg-icon">🦷</div><h3>Avoid Knee Replacement</h3><p>Advanced therapy to reduce joint degeneration, relieve pain and restore mobility without knee replacement surgery.</p><span class="sdg-tag">Avoid Surgery</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.1s"><div class="sdg-icon">🦴</div><h3>Avoid Spine Surgery</h3><p>Holistic treatment for disc herniation, spondylitis and spinal stenosis to avoid surgical intervention.</p><span class="sdg-tag">Avoid Surgery</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.2s"><div class="sdg-icon">🩸</div><h3>Varicose Veins Care</h3><p>Non-invasive management of varicose veins through naturopathy and advanced therapy. Subject to evaluation.</p><span class="sdg-tag">Vascular</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.3s"><div class="sdg-icon">👁️</div><h3>Eye & ENT Conditions</h3><p>Supportive holistic care for eye strain, blurred vision, sinus and ENT conditions. Subject to individual evaluation.</p><span class="sdg-tag">ENT / Eye</span></div>
+      </div>
+      <div style="margin-top:1.5rem;padding:1.25rem;background:rgba(201,150,58,0.1);border:1px solid rgba(201,150,58,0.3);border-radius:var(--r-md);">
+        <p style="font-size:0.875rem;color:var(--text-mid);">⚠️ <strong>Important Note:</strong> Our Avoid Surgery program is subject to individual evaluation. We are completely transparent about what we can and cannot achieve. Patient safety and honest assessment always come first.</p>
+      </div>
+    </div>
+
+    <!-- WEIGHT MANAGEMENT -->
+    <div class="service-section-block" id="weight">
+      <div class="service-section-header reveal">
+        <div class="service-section-icon">⚖️</div>
+        <div><h2>Weight Management & Lifestyle</h2><p>Sustainable weight loss and metabolic health through holistic approaches</p></div>
+      </div>
+      <div class="service-detail-grid">
+        <div class="sdg-card reveal"><div class="sdg-icon">⚖️</div><h3>Weight Loss Program</h3><p>Personalized weight loss combining acupuncture, naturopathy, diet planning and lifestyle modification for lasting results.</p><span class="sdg-tag">Weight Loss</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.1s"><div class="sdg-icon">🥗</div><h3>Diet & Nutrition Planning</h3><p>Customized nutritional protocols for weight management, diabetes, thyroid, PCOD and chronic disease support.</p><span class="sdg-tag">Nutrition</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.2s"><div class="sdg-icon">🌿</div><h3>Gut Health Restoration</h3><p>Treatment for IBS, ulcers, leaky gut, acidity, poor digestion and metabolic disorders using natural therapies.</p><span class="sdg-tag">Gut Health</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.3s"><div class="sdg-icon">🛡️</div><h3>Immunity Boosting</h3><p>Comprehensive immunity enhancement programs for recurrent infections, low immunity and preventive healthcare.</p><span class="sdg-tag">Immunity</span></div>
+      </div>
+    </div>
+
+    <!-- DIAGNOSIS -->
+    <div class="service-section-block" id="diagnosis">
+      <div class="service-section-header reveal">
+        <div class="service-section-icon">🔬</div>
+        <div><h2>Advanced Diagnostics</h2><p>US FDA-approved equipment for precise, non-invasive root-cause diagnosis</p></div>
+      </div>
+      <div class="service-detail-grid">
+        <div class="sdg-card reveal"><div class="sdg-icon">🔬</div><h3>Biofeedback Diagnosis</h3><p>Real-time physiological monitoring using advanced biofeedback to identify stress, imbalances and health root causes.</p><span class="sdg-tag">Diagnostic</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.1s"><div class="sdg-icon">🩺</div><h3>Nadi Pariksha</h3><p>Traditional Ayurvedic pulse diagnosis to assess all three doshas and identify systemic health imbalances.</p><span class="sdg-tag">Ayurvedic</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.2s"><div class="sdg-icon">💓</div><h3>Pulse Diagnosis</h3><p>Advanced pulse reading techniques for comprehensive assessment of organ health, energy flow and body constitution.</p><span class="sdg-tag">Diagnostic</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.3s"><div class="sdg-icon">🧪</div><h3>BCM / Body Composition Analysis</h3><p>Precise body composition measurement to guide weight management, nutrition and treatment protocols.</p><span class="sdg-tag">Assessment</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.4s"><div class="sdg-icon">⚡</div><h3>ATMA & Aculife Diagnostics</h3><p>US FDA-approved German and Japanese diagnostic machines for in-depth organ-level health assessment.</p><span class="sdg-tag">FDA Approved</span></div>
+        <div class="sdg-card reveal" style="transition-delay:.5s"><div class="sdg-icon">🫀</div><h3>Masic & TENS Assessment</h3><p>Advanced therapeutic assessment and treatment using professional-grade electrotherapy equipment.</p><span class="sdg-tag">Equipment</span></div>
+      </div>
+    </div>
+
+    <!-- HOME VISIT CTA -->
+    <div class="home-visit-section reveal">
+      <h3>🏡 Home Visit Available for All Services</h3>
+      <p>Can't make it to the clinic? Our senior therapists will come to you. Professional treatment at your doorstep in Gurugram and nearby areas.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+        <a href="appointment.html" class="btn-cta-white">📅 Book Home Visit</a>
+        <a href="https://wa.me/919311642999?text=I%20need%20a%20home%20visit%20appointment" target="_blank" class="btn-cta-outline">💬 WhatsApp for Home Visit</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="container">
+    <h2>Not Sure Which Service You Need?</h2>
+    <p>Call us or use our Symptom Checker. Dr. Arpita's team will guide you to the right treatment for your condition.</p>
+    <div class="cta-banner-actions">
+      <a href="appointment.html" class="btn-cta-white">📅 Book Free Consultation</a>
+      <a href="tel:+919311642999" class="btn-cta-outline">📞 +91 93116 42999</a>
+      <a href="index.html#symptom-checker" class="btn-cta-outline">🩺 Symptom Checker</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div><div class="footer-logo">BRC <span>Clinic</span></div><p class="footer-desc">35+ advanced holistic therapies in Gurugram. Non-surgical, root-cause healing.</p><div class="footer-social"><a href="https://instagram.com/biophysiotherapy" target="_blank" class="social-icon">📸</a><a href="https://wa.me/919311642999" target="_blank" class="social-icon">💬</a><a href="tel:+919311642999" class="social-icon">📞</a></div></div>
+    <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="conditions.html">Conditions</a></li><li><a href="appointment.html">Book Appointment</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul><li><a href="tel:+919311642999">📞 +91 93116 42999</a></li><li><a href="mailto:ceo@aarogita.com">✉️ ceo@aarogita.com</a></li><li><a href="contact.html">📍 342P, Basement, near Medicity, Islampur Village, Sector 38, Gurugram, Haryana 122001</a></li></ul></div>
+    <div class="footer-col"><h4>Legal</h4><ul><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms.html">Terms & Conditions</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><p>© 2025 BRC Clinic – Pain, Spine & Joint Rehab. All rights reserved. | 342P, Basement, near Medicity, Islampur Village, Sector 38, Gurugram, Haryana 122001</p></div>
+</footer>
+
+<a href="https://wa.me/919311642999" target="_blank" id="whatsapp-btn">💬</a>
+<a href="tel:+919311642999" id="call-btn">📞</a>
+<button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<div id="toast"></div>
+<script src="js/main.js"></script>
+<script>
+function scrollTo(id){const el=document.getElementById(id);if(el){const top=el.getBoundingClientRect().top+window.scrollY-130;window.scrollTo({top,behavior:'smooth'});}}
+document.querySelectorAll('.snav-btn').forEach(btn=>{btn.addEventListener('click',function(){document.querySelectorAll('.snav-btn').forEach(b=>b.classList.remove('active'));this.classList.add('active');});});
+</script>
+</body>
+</html>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://brcclinic.in/</loc><lastmod>2025-04-01</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://brcclinic.in/about.html</loc><lastmod>2025-04-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://brcclinic.in/services.html</loc><lastmod>2025-04-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://brcclinic.in/conditions.html</loc><lastmod>2025-04-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://brcclinic.in/appointment.html</loc><lastmod>2025-04-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://brcclinic.in/blog.html</loc><lastmod>2025-04-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://brcclinic.in/testimonials.html</loc><lastmod>2025-04-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://brcclinic.in/contact.html</loc><lastmod>2025-04-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://brcclinic.in/privacy-policy.html</loc><lastmod>2025-04-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://brcclinic.in/terms.html</loc><lastmod>2025-04-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+</urlset>
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Patient Testimonials – BRC Clinic Gurugram | Real Reviews & Success Stories</title>
+  <meta name="description" content="Read real patient testimonials from BRC Clinic Gurugram. 25,550+ patients healed. 4.9 Google rating. Success stories for back pain, fertility, stroke rehab and more."/>
+  <link rel="canonical" href="https://brcclinic.in/testimonials.html"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    .rating-hero { display:flex;align-items:center;justify-content:center;gap:3rem;flex-wrap:wrap;padding:3rem;background:linear-gradient(135deg,var(--primary),var(--accent));border-radius:var(--r-xl);margin-bottom:3rem;color:white; }
+    .rating-box { text-align:center; }
+    .rating-num { font-family:'Outfit',sans-serif;font-size:4rem;font-weight:900;color:var(--gold-light);line-height:1; }
+    .rating-stars { font-size:1.5rem;letter-spacing:2px;margin:0.25rem 0; }
+    .rating-label { font-size:0.85rem;opacity:0.8; }
+    .rating-divider { width:1px;height:80px;background:rgba(255,255,255,0.2); }
+    .testi-filter { display:flex;gap:0.75rem;flex-wrap:wrap;margin-bottom:2rem; }
+    .testi-full-card { background:var(--white);border-radius:var(--r-xl);padding:2.5rem;border:1px solid var(--border);margin-bottom:1.5rem;transition:var(--transition);position:relative; }
+    .testi-full-card:hover { border-color:var(--secondary);box-shadow:var(--shadow-md); }
+    .testi-full-card .testi-quote { font-size:5rem;color:var(--secondary);line-height:0.8;margin-bottom:0.5rem;font-family:'Cormorant Garamond',serif; }
+    .testi-full-text { font-size:1.05rem;color:var(--text-mid);line-height:1.85;margin-bottom:1.5rem;font-style:italic; }
+    .testi-full-meta { display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;padding-top:1rem;border-top:1px solid var(--border); }
+    .testi-full-author { display:flex;align-items:center;gap:1rem; }
+    .tfc-avatar { width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--accent));display:flex;align-items:center;justify-content:center;color:white;font-family:'Outfit',sans-serif;font-weight:700;font-size:1rem; }
+    .tfc-name { font-family:'Outfit',sans-serif;font-weight:700;font-size:1rem;color:var(--text); }
+    .tfc-cond { font-size:0.82rem;color:var(--accent);font-weight:600; }
+    .tfc-loc { font-size:0.78rem;color:var(--text-light); }
+    .testi-tag { background:var(--secondary-light);color:var(--secondary-dark);padding:0.3rem 0.85rem;border-radius:var(--r-full);font-size:0.78rem;font-weight:700; }
+    .verified-badge { background:rgba(13,115,119,0.1);color:var(--accent);padding:0.25rem 0.65rem;border-radius:var(--r-full);font-size:0.75rem;font-weight:700; }
+    .leave-review { background:linear-gradient(135deg,var(--secondary-light),var(--primary-pale));border:2px dashed var(--secondary);border-radius:var(--r-xl);padding:3rem;text-align:center;margin-top:3rem; }
+    .leave-review h3 { font-family:'Outfit',sans-serif;font-weight:800;font-size:1.5rem;color:var(--primary);margin-bottom:0.75rem; }
+  </style>
+</head>
+<body>
+<div id="cursor-dot"></div><div id="cursor-ring"></div><div id="scroll-progress"></div>
+<div id="loading-screen"><div class="loading-logo">BRC <span>Clinic</span></div><div class="loading-bar-wrap"><div class="loading-bar"></div></div><p class="loading-text">Loading Reviews...</p></div>
+<div id="cookie-bar"><p>🍪 We use cookies. <a href="privacy-policy.html">Learn more</a></p><div class="cookie-btns"><button class="btn-cookie-accept" id="cookieAccept">Accept</button><button class="btn-cookie-decline" id="cookieDecline">Decline</button></div></div>
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><div class="nav-logo-icon">B</div><div class="nav-logo-text">BRC <span>Clinic</span></div></a>
+    <ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="conditions.html">Conditions</a></li><li><a href="blog.html">Blog</a></li><li><a href="testimonials.html" class="active">Reviews</a></li><li><a href="contact.html">Contact</a></li></ul>
+    <div class="nav-actions"><button class="btn-lang" id="langToggle">हिं / EN</button><button class="btn-theme" id="themeToggle">🌙</button><a href="appointment.html" class="btn-nav-cta">📅 Book Now</a></div>
+    <div id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<div id="menu-overlay"></div>
+<div id="mobile-menu"><div class="mobile-menu-links"><a href="index.html">🏠 Home</a><a href="about.html">👩‍⚕️ About</a><a href="services.html">💊 Services</a><a href="conditions.html">🩺 Conditions</a><a href="blog.html">📝 Blog</a><a href="testimonials.html">⭐ Reviews</a><a href="appointment.html">📅 Book Appointment</a><a href="contact.html">📞 Contact</a></div></div>
+
+<div class="page-hero">
+  <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Patient Testimonials</span></div>
+  <h1>Patient <span style="color:var(--secondary)">Success Stories</span></h1>
+  <p>Real people. Real results. Over 25,550 patients have found lasting relief at BRC Clinic.</p>
+</div>
+
+<section class="section" style="background:var(--cream)">
+  <div class="container">
+    <!-- RATING HERO -->
+    <div class="rating-hero reveal">
+      <div class="rating-box"><div class="rating-num">4.9</div><div class="rating-stars">★★★★★</div><div class="rating-label">Google Rating</div></div>
+      <div class="rating-divider"></div>
+      <div class="rating-box"><div class="rating-num">25K+</div><div class="rating-stars" style="font-size:1rem;letter-spacing:1px;">PATIENTS</div><div class="rating-label">Successfully Treated</div></div>
+      <div class="rating-divider"></div>
+      <div class="rating-box"><div class="rating-num">95%</div><div class="rating-stars" style="font-size:1rem;">SUCCESS</div><div class="rating-label">Satisfaction Rate</div></div>
+      <div class="rating-divider"></div>
+      <div class="rating-box"><div class="rating-num">15+</div><div class="rating-stars" style="font-size:1rem;">YEARS</div><div class="rating-label">Clinical Experience</div></div>
+    </div>
+
+    <!-- FILTER -->
+    <div class="testi-filter">
+      <button class="filter-btn active" onclick="filterT('all',this)">All Stories</button>
+      <button class="filter-btn" onclick="filterT('pain',this)">🦴 Pain & Spine</button>
+      <button class="filter-btn" onclick="filterT('fertility',this)">🧬 Fertility</button>
+      <button class="filter-btn" onclick="filterT('neuro',this)">🧠 Neuro Rehab</button>
+      <button class="filter-btn" onclick="filterT('lifestyle',this)">⚖️ Lifestyle</button>
+      <button class="filter-btn" onclick="filterT('mental',this)">💙 Mental Health</button>
+    </div>
+
+    <!-- TESTIMONIALS -->
+    <div id="testiContainer">
+      <div class="testi-full-card reveal" data-cat="pain">
+        <div class="testi-quote">"</div>
+        <p class="testi-full-text">I had been suffering from severe slip disc for 3 years. Doctors everywhere told me surgery was inevitable. A friend referred me to Dr. Arpita. After just 12 sessions, the pain was gone completely. I can now walk, run and live normally. Dr. Arpita's approach is truly magical — she doesn't just treat the symptom, she heals the root cause. I am forever grateful.</p>
+        <div class="testi-full-meta">
+          <div class="testi-full-author"><div class="tfc-avatar">RK</div><div><div class="tfc-name">Rajesh Kumar</div><div class="tfc-cond">Slip Disc / Severe Back Pain</div><div class="tfc-loc">📍 Gurugram</div></div></div>
+          <div style="display:flex;gap:0.5rem;align-items:center;flex-wrap:wrap;"><span class="testi-tag">Pain & Spine</span><span class="verified-badge">✓ Verified Patient</span><span style="color:#F59E0B;font-size:1rem;">★★★★★</span></div>
+        </div>
+      </div>
+      <div class="testi-full-card reveal" data-cat="fertility">
+        <div class="testi-quote">"</div>
+        <p class="testi-full-text">After two failed IVF cycles and years of heartbreak, a relative suggested BRC Clinic. We were skeptical at first, but Dr. Arpita explained everything so patiently. She prepared my body holistically before our third IVF attempt using acupuncture, dietary changes and her special therapies. Our third cycle was successful and we are now blessed with a healthy baby boy! No words can describe our gratitude.</p>
+        <div class="testi-full-meta">
+          <div class="testi-full-author"><div class="tfc-avatar">PS</div><div><div class="tfc-name">Priya Sharma</div><div class="tfc-cond">IVF Support / Fertility</div><div class="tfc-loc">📍 Delhi NCR</div></div></div>
+          <div style="display:flex;gap:0.5rem;align-items:center;flex-wrap:wrap;"><span class="testi-tag">Fertility</span><span class="verified-badge">✓ Verified Patient</span><span style="color:#F59E0B;font-size:1rem;">★★★★★</span></div>
+        </div>
+      </div>
+      <div class="testi-full-card reveal" data-cat="neuro">
+        <div class="testi-quote">"</div>
+        <p class="testi-full-text">My father had a severe stroke and was completely bedridden. After 3 months of rehab at BRC Clinic under Dr. Arpita's supervision, he can now walk with support and speaks clearly. The dedication of the entire team — Dr. Arpita, Monika, Gaurav — has been extraordinary. They treated my father like family. We still have a long journey ahead but BRC gave us hope when we had none.</p>
+        <div class="testi-full-meta">
+          <div class="testi-full-author"><div class="tfc-avatar">AM</div><div><div class="tfc-name">Amit Mehra</div><div class="tfc-cond">Stroke Rehabilitation</div><div class="tfc-loc">📍 Faridabad</div></div></div>
+          <div style="display:flex;gap:0.5rem;align-items:center;flex-wrap:wrap;"><span class="testi-tag">Neuro Rehab</span><span class="verified-badge">✓ Verified Patient</span><span style="color:#F59E0B;font-size:1rem;">★★★★★</span></div>
+        </div>
+      </div>
+      <div class="testi-full-card reveal" data-cat="lifestyle">
+        <div class="testi-quote">"</div>
+        <p class="testi-full-text">I had been struggling with PCOD for 6 years — irregular periods, weight gain, hair loss and hormonal chaos. Doctors just kept prescribing birth control pills which made things worse. Dr. Arpita diagnosed the root cause using biofeedback and pulse diagnosis — it was a liver imbalance triggering everything. Within 4 months of treatment, my periods are regular, I've lost 8 kg and my hair has stopped falling. I feel like a new person!</p>
+        <div class="testi-full-meta">
+          <div class="testi-full-author"><div class="tfc-avatar">NK</div><div><div class="tfc-name">Neha Kapoor</div><div class="tfc-cond">PCOD / Hormonal Imbalance</div><div class="tfc-loc">📍 Gurugram</div></div></div>
+          <div style="display:flex;gap:0.5rem;align-items:center;flex-wrap:wrap;"><span class="testi-tag">Lifestyle</span><span class="verified-badge">✓ Verified Patient</span><span style="color:#F59E0B;font-size:1rem;">★★★★★</span></div>
+        </div>
+      </div>
+      <div class="testi-full-card reveal" data-cat="mental">
+        <div class="testi-quote">"</div>
+        <p class="testi-full-text">I was on sleeping pills for 4 years for severe insomnia and anxiety. I'd tried everything — psychiatrists, counselors, meditation apps. A colleague recommended BRC Clinic. Dr. Arpita's neurotherapy and hypnotherapy sessions were life-changing. Within 6 weeks, I was sleeping naturally without any pills. My anxiety levels dropped dramatically. I feel calm, focused and happy for the first time in years.</p>
+        <div class="testi-full-meta">
+          <div class="testi-full-author"><div class="tfc-avatar">VB</div><div><div class="tfc-name">Vikram Bhatia</div><div class="tfc-cond">Insomnia / Anxiety</div><div class="tfc-loc">📍 Gurgaon</div></div></div>
+          <div style="display:flex;gap:0.5rem;align-items:center;flex-wrap:wrap;"><span class="testi-tag">Mental Health</span><span class="verified-badge">✓ Verified Patient</span><span style="color:#F59E0B;font-size:1rem;">★★★★★</span></div>
+        </div>
+      </div>
+      <div class="testi-full-card reveal" data-cat="pain">
+        <div class="testi-quote">"</div>
+        <p class="testi-full-text">I was scheduled for a knee replacement surgery. The doctor said my cartilage was almost worn out. My daughter found BRC Clinic online. After 3 months of treatment with Dr. Arpita — acupuncture, physiotherapy and some dietary changes — my knee pain reduced by 80%. My surgeon was stunned at my last checkup. I cancelled the surgery. Dr. Arpita is an absolute miracle worker.</p>
+        <div class="testi-full-meta">
+          <div class="testi-full-author"><div class="tfc-avatar">RM</div><div><div class="tfc-name">Ramesh Malhotra</div><div class="tfc-cond">Avoided Knee Replacement</div><div class="tfc-loc">📍 Delhi</div></div></div>
+          <div style="display:flex;gap:0.5rem;align-items:center;flex-wrap:wrap;"><span class="testi-tag">Pain & Spine</span><span class="verified-badge">✓ Verified Patient</span><span style="color:#F59E0B;font-size:1rem;">★★★★★</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LEAVE REVIEW -->
+    <div class="leave-review reveal">
+      <div style="font-size:3rem;margin-bottom:0.75rem;">⭐</div>
+      <h3>Have You Been Treated at BRC Clinic?</h3>
+      <p style="color:var(--text-mid);margin-bottom:1.5rem;font-size:0.95rem;">Your experience helps other patients find the right treatment. Please share your story!</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+        <a href="https://share.google/w5H9oS7P2W6dzjVcu" target="_blank" class="btn-primary">⭐ Leave a Google Review</a>
+        <a href="https://wa.me/919311642999?text=Hello!%20I%20would%20like%20to%20share%20my%20testimonial%20about%20BRC%20Clinic." target="_blank" class="btn-secondary">💬 Share on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="container">
+    <h2>You Could Be Our Next Success Story</h2>
+    <p>Join 25,550+ patients who have found lasting relief at BRC Clinic. Book your consultation today.</p>
+    <div class="cta-banner-actions">
+      <a href="appointment.html" class="btn-cta-white">📅 Book Appointment</a>
+      <a href="tel:+919311642999" class="btn-cta-outline">📞 +91 93116 42999</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div><div class="footer-logo">BRC <span>Clinic</span></div><p class="footer-desc">25,550+ patients healed. 4.9 Google rating. India's Most Trusted Healthcare Award 2021.</p><div class="footer-social"><a href="https://instagram.com/biophysiotherapy" target="_blank" class="social-icon">📸</a><a href="https://wa.me/919311642999" target="_blank" class="social-icon">💬</a><a href="tel:+919311642999" class="social-icon">📞</a></div></div>
+    <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="appointment.html">Book Appointment</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul><li><a href="tel:+919311642999">📞 +91 93116 42999</a></li><li><a href="mailto:ceo@aarogita.com">✉️ ceo@aarogita.com</a></li><li><a href="contact.html">📍 342P, Basement, near Medicity, Islampur Village, Sector 38, Gurugram, Haryana 122001</a></li></ul></div>
+    <div class="footer-col"><h4>Legal</h4><ul><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms.html">Terms & Conditions</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><p>© 2025 BRC Clinic – Pain, Spine & Joint Rehab. All rights reserved. | 342P, Basement, near Medicity, Islampur Village, Sector 38, Gurugram, Haryana 122001</p></div>
+</footer>
+<a href="https://wa.me/919311642999" target="_blank" id="whatsapp-btn">💬</a>
+<a href="tel:+919311642999" id="call-btn">📞</a>
+<button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<div id="toast"></div>
+<script src="js/main.js"></script>
+<script>
+function filterT(cat,btn){document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');document.querySelectorAll('.testi-full-card').forEach(c=>{if(cat==='all'||c.dataset.cat===cat)c.style.display='block';else c.style.display='none';});}
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>404 – Page Not Found | BRC Clinic Gurugram</title>
+  <meta name="robots" content="noindex"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    .not-found { min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:2rem;background:linear-gradient(135deg,var(--cream) 0%,var(--secondary-light) 100%); }
+    .nf-inner { max-width:560px; }
+    .nf-code { font-family:'Outfit',sans-serif;font-size:8rem;font-weight:900;line-height:1;background:linear-gradient(135deg,var(--primary),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text; }
+    .nf-icon { font-size:4rem;margin:1rem 0; }
+    .nf-title { font-family:'Outfit',sans-serif;font-size:1.75rem;font-weight:800;color:var(--text);margin-bottom:0.75rem; }
+    .nf-desc { font-size:1rem;color:var(--text-mid);line-height:1.7;margin-bottom:2.5rem; }
+    .nf-links { display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.5rem; }
+    .nf-link { padding:0.875rem 1rem;border-radius:var(--r-md);border:1px solid var(--border);font-family:'Outfit',sans-serif;font-weight:600;font-size:0.9rem;color:var(--text-mid);background:var(--white);transition:var(--transition-fast);text-align:center; }
+    .nf-link:hover { border-color:var(--primary);color:var(--primary);transform:translateY(-2px); }
+    @media(max-width:480px){.nf-links{grid-template-columns:1fr;}.nf-code{font-size:6rem;}}
+  </style>
+</head>
+<body>
+<div id="cursor-dot"></div><div id="cursor-ring"></div>
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><div class="nav-logo-icon">B</div><div class="nav-logo-text">BRC <span>Clinic</span></div></a>
+    <div class="nav-actions"><button class="btn-theme" id="themeToggle">🌙</button><a href="appointment.html" class="btn-nav-cta">📅 Book Now</a></div>
+  </div>
+</nav>
+
+<div class="not-found">
+  <div class="nf-inner">
+    <div class="nf-code">404</div>
+    <div class="nf-icon">🏥</div>
+    <div class="nf-title">Page Not Found</div>
+    <div class="nf-desc">Oops! The page you're looking for doesn't exist or may have moved. Don't worry — we're still here to help you heal!</div>
+    <a href="index.html" class="btn-primary" style="display:inline-flex;gap:0.5rem;">🏠 Back to Homepage</a>
+    <div class="nf-links">
+      <a href="services.html" class="nf-link">💊 Our Services</a>
+      <a href="appointment.html" class="nf-link">📅 Book Appointment</a>
+      <a href="conditions.html" class="nf-link">🩺 Conditions Treated</a>
+      <a href="contact.html" class="nf-link">📞 Contact Us</a>
+    </div>
+    <div style="margin-top:2rem;padding:1.25rem;background:var(--white);border-radius:var(--r-md);border:1px solid var(--border);">
+      <p style="font-size:0.875rem;color:var(--text-mid);">Need immediate help? Call us: <a href="tel:+919311642999" style="color:var(--primary);font-weight:700;">+91 93116 42999</a> or <a href="https://wa.me/919311642999" target="_blank" style="color:#25D366;font-weight:700;">WhatsApp Us 💬</a></p>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Dr. Arpita Shefali – BRC Clinic Gurugram | 15+ Years Experience</title>
+  <meta name="description" content="Meet Dr. Arpita Shefali – BNYS, MD (Acu), Neurotherapist with 15+ years of experience. AYUSH Ministry felicitation. India's Most Trusted Healthcare Award 2021. BRC Clinic, Gurugram."/>
+  <link rel="canonical" href="https://brcclinic.in/about.html"/>
+  <meta property="og:title" content="About Dr. Arpita Shefali – BRC Clinic Gurugram"/>
+  <meta property="og:description" content="15+ years of holistic healing expertise. Recognized by AYUSH Ministry, Amisha Patel, Madan Lal & more."/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    .timeline { position:relative; padding:2rem 0; }
+    .timeline::before { content:''; position:absolute; left:50%; top:0; bottom:0; width:2px; background:linear-gradient(var(--secondary),var(--primary)); transform:translateX(-50%); }
+    .tl-item { display:grid; grid-template-columns:1fr 60px 1fr; gap:1rem; align-items:center; margin-bottom:2.5rem; }
+    .tl-dot { width:18px; height:18px; border-radius:50%; background:var(--secondary); border:3px solid var(--white); box-shadow:0 0 0 3px var(--secondary); margin:0 auto; z-index:1; }
+    .tl-left { text-align:right; }
+    .tl-right { text-align:left; }
+    .tl-empty { display:block; }
+    .tl-year { font-family:'Outfit',sans-serif; font-weight:800; font-size:1.1rem; color:var(--primary); }
+    .tl-title { font-family:'Outfit',sans-serif; font-weight:700; font-size:0.95rem; color:var(--text); margin-bottom:0.25rem; }
+    .tl-desc { font-size:0.85rem; color:var(--text-mid); line-height:1.6; }
+    .tl-card { background:var(--white); border:1px solid var(--border); border-radius:var(--r-md); padding:1.25rem; box-shadow:var(--shadow-xs); transition:var(--transition); }
+    .tl-card:hover { border-color:var(--secondary); box-shadow:var(--shadow-sm); }
+    .mission-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; margin-top:2.5rem; }
+    .mission-card { background:var(--white); border-radius:var(--r-lg); padding:2rem 1.5rem; text-align:center; border:1px solid var(--border); transition:var(--transition); }
+    .mission-card:hover { transform:translateY(-4px); box-shadow:var(--shadow-md); border-color:var(--secondary); }
+    .mission-icon { font-size:2.5rem; margin-bottom:1rem; }
+    .mission-card h3 { font-family:'Outfit',sans-serif; font-weight:700; font-size:1rem; color:var(--primary); margin-bottom:0.5rem; }
+    .mission-card p { font-size:0.875rem; color:var(--text-mid); line-height:1.65; }
+    .cert-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:1rem; margin-top:2rem; }
+    .cert-card { background:var(--primary-pale); border:1px solid var(--border); border-radius:var(--r-md); padding:1.25rem; display:flex; align-items:center; gap:0.75rem; transition:var(--transition); }
+    .cert-card:hover { border-color:var(--primary); background:var(--white); }
+    .cert-icon { font-size:1.4rem; flex-shrink:0; }
+    .cert-text { font-size:0.875rem; font-weight:600; color:var(--text); }
+    @media(max-width:768px){
+      .timeline::before{left:20px;}
+      .tl-item{grid-template-columns:40px 1fr;gap:0.75rem;}
+      .tl-left{display:none;}
+      .tl-dot{margin:0;}
+      .mission-grid{grid-template-columns:1fr;}
+    }
+  </style>
+</head>
+<body>
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+<div id="scroll-progress"></div>
+<div id="loading-screen"><div class="loading-logo">BRC <span>Clinic</span></div><div class="loading-bar-wrap"><div class="loading-bar"></div></div><p class="loading-text">Loading...</p></div>
+<div id="cookie-bar"><p>🍪 We use cookies to improve your experience. <a href="privacy-policy.html">Learn more</a></p><div class="cookie-btns"><button class="btn-cookie-accept" id="cookieAccept">Accept</button><button class="btn-cookie-decline" id="cookieDecline">Decline</button></div></div>
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><div class="nav-logo-icon">B</div><div class="nav-logo-text">BRC <span>Clinic</span></div></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="conditions.html">Conditions</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="testimonials.html">Reviews</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="btn-lang" id="langToggle">हिं / EN</button>
+      <button class="btn-theme" id="themeToggle">🌙</button>
+      <a href="appointment.html" class="btn-nav-cta">📅 Book Now</a>
+    </div>
+    <div id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<div id="menu-overlay"></div>
+<div id="mobile-menu">
+  <div class="mobile-menu-links">
+    <a href="index.html">🏠 Home</a><a href="about.html">👩‍⚕️ About Dr. Arpita</a><a href="services.html">💊 Services</a><a href="conditions.html">🩺 Conditions</a><a href="blog.html">📝 Blog</a><a href="testimonials.html">⭐ Reviews</a><a href="appointment.html">📅 Book Appointment</a><a href="contact.html">📞 Contact</a>
+  </div>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>About Us</span></div>
+  <h1>About <span style="color:var(--secondary)">Dr. Arpita Shefali</span></h1>
+  <p>15+ Years of Healing Excellence · Recognized by AYUSH Ministry · India's Most Trusted Healthcare Award 2021</p>
+</div>
+
+<!-- DOCTOR DETAILED PROFILE -->
+<section class="section doctor-section" style="background:var(--white)">
+  <div class="container">
+    <div class="doctor-grid">
+      <div class="reveal-left doctor-img-wrap">
+        <img src="images/dr-arpita.jpg" alt="Dr. Arpita Shefali – BRC Clinic Gurugram" class="doctor-img" onerror="this.style.background='linear-gradient(135deg,#E8F4FD,#0D7377)';this.style.minHeight='400px';"/>
+        <div class="doctor-cert-badge"><div class="num">15+</div><p>Years of Excellence</p></div>
+      </div>
+      <div class="reveal-right doctor-info">
+        <div class="section-label">Lead Physician & Founder</div>
+        <h1 class="doctor-name" style="font-size:2.2rem;">Dr. Arpita Shefali</h1>
+        <div class="doctor-quals">
+          <span class="qual-tag">BNYS</span><span class="qual-tag">MD (Acu)</span><span class="qual-tag">DHNS</span><span class="qual-tag">DECE</span><span class="qual-tag">Neurotherapist</span><span class="qual-tag">Hypno Therapist</span><span class="qual-tag">Reiki Master</span>
+        </div>
+        <p class="doctor-bio">Dr. Arpita Shefali is a trailblazer in integrative and holistic medicine, combining the best of naturopathy, acupuncture, neurotherapy, physiotherapy and advanced diagnostics to deliver transformational results for her patients.</p>
+        <p class="doctor-bio">With over 15 years of hands-on clinical experience and 25,550+ patients treated, she has pioneered a unique approach that identifies the root cause of chronic diseases and addresses them through a synergistic blend of ancient healing wisdom and cutting-edge medical technology.</p>
+        <p class="doctor-bio">Her clinic is equipped with US FDA-approved medical devices sourced from Germany, Japan, China and India, enabling precise, non-invasive diagnosis and treatment for a wide spectrum of conditions — from spine disorders to fertility challenges, from neurological diseases to lifestyle disorders.</p>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.5rem;">
+          <a href="appointment.html" class="btn-primary">📅 Book with Dr. Arpita</a>
+          <a href="tel:+919311642999" class="btn-secondary">📞 +91 93116 42999</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MISSION / VISION / VALUES -->
+<section class="section" style="background:var(--cream)">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="section-label">Our Philosophy</div>
+      <h2 class="section-title">Mission, Vision & <span class="accent">Values</span></h2>
+    </div>
+    <div class="mission-grid">
+      <div class="mission-card reveal">
+        <div class="mission-icon">🎯</div>
+        <h3>Our Mission</h3>
+        <p>To provide affordable, accessible, non-surgical holistic healing that treats the root cause — empowering every patient to reclaim their health, mobility and quality of life.</p>
+      </div>
+      <div class="mission-card reveal" style="transition-delay:0.15s">
+        <div class="mission-icon">🌟</div>
+        <h3>Our Vision</h3>
+        <p>To be India's most trusted integrative medicine clinic, bridging the ancient wisdom of naturopathy and acupuncture with precision modern diagnostics and evidence-based therapies.</p>
+      </div>
+      <div class="mission-card reveal" style="transition-delay:0.3s">
+        <div class="mission-icon">💛</div>
+        <h3>Our Values</h3>
+        <p>Compassion, transparency and patient-first care. Every treatment plan is personalized. Every patient deserves honest assessment of what we can and cannot achieve together.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS & SPECIALIZATIONS -->
+<section class="section" style="background:var(--white)">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Qualifications</div>
+      <h2 class="section-title">Certifications & <span class="accent">Specializations</span></h2>
+      <p class="section-desc">Dr. Arpita holds multiple advanced certifications across naturopathy, acupuncture, neuroscience and holistic healing disciplines.</p>
+    </div>
+    <div class="cert-grid">
+      <div class="cert-card reveal"><div class="cert-icon">🎓</div><div class="cert-text">BNYS – Bachelor of Naturopathy & Yogic Sciences</div></div>
+      <div class="cert-card reveal"><div class="cert-icon">🎓</div><div class="cert-text">MD (Acu) – Doctor of Medicine in Acupuncture</div></div>
+      <div class="cert-card reveal"><div class="cert-icon">🎓</div><div class="cert-text">DHNS – Diploma in Holistic Nutrition Sciences</div></div>
+      <div class="cert-card reveal"><div class="cert-icon">🎓</div><div class="cert-text">DECE – Diploma in ECE (Child Health)</div></div>
+      <div class="cert-card reveal"><div class="cert-icon">🧠</div><div class="cert-text">Certified Neurotherapist</div></div>
+      <div class="cert-card reveal"><div class="cert-icon">🌀</div><div class="cert-text">Certified Hypnotherapist</div></div>
+      <div class="cert-card reveal"><div class="cert-icon">✨</div><div class="cert-text">Reiki Grand Master</div></div>
+      <div class="cert-card reveal"><div class="cert-icon">🪡</div><div class="cert-text">Master Tung Acupuncture Specialist</div></div>
+      <div class="cert-card reveal"><div class="cert-icon">🌿</div><div class="cert-text">Classical & Modern Naturopathy</div></div>
+      <div class="cert-card reveal"><div class="cert-icon">🔬</div><div class="cert-text">Biofeedback Diagnosis Expert</div></div>
+      <div class="cert-card reveal"><div class="cert-icon">🩺</div><div class="cert-text">Nadi Pariksha & Pulse Diagnosis</div></div>
+      <div class="cert-card reveal"><div class="cert-icon">🌺</div><div class="cert-text">Yoga Therapy Practitioner</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- AWARDS & RECOGNITION -->
+<section class="awards-section" style="padding:5rem 2rem;">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="section-label">Recognition</div>
+      <h2 class="section-title" style="color:var(--white)">Awards & <span style="color:var(--gold-light)">Recognition</span></h2>
+    </div>
+    <div class="awards-grid">
+      <div class="award-card reveal"><div class="award-icon">🏛️</div><h4>AYUSH Ministry Felicitation</h4><p>Officially recognized and felicitated by India's Ministry of AYUSH for outstanding contributions to alternative medicine.</p></div>
+      <div class="award-card reveal" style="transition-delay:0.1s"><div class="award-icon">🏆</div><h4>India's Most Trusted Healthcare Award – 2021</h4><p>Awarded at the national level for exceptional patient outcomes and holistic healthcare excellence.</p></div>
+      <div class="award-card reveal" style="transition-delay:0.2s"><div class="award-icon">🎬</div><h4>Endorsed by Amisha Patel</h4><p>Bollywood actress Amisha Patel recognized BRC as the Most Trusted Acupuncture & Acupressure Clinic.</p></div>
+      <div class="award-card reveal" style="transition-delay:0.3s"><div class="award-icon">🏏</div><h4>Felicitated by Madan Lal</h4><p>Honored by Mr. Madan Lal, the legendary Coach of the Indian Cricket Team.</p></div>
+      <div class="award-card reveal" style="transition-delay:0.4s"><div class="award-icon">🚀</div><h4>Acknowledged by Dr. Vivek Bindra</h4><p>Recognized by India's most-watched motivational speaker and startup mentor.</p></div>
+      <div class="award-card reveal" style="transition-delay:0.5s"><div class="award-icon">🌍</div><h4>US FDA Equipment Standards</h4><p>Clinic equipped with internationally certified diagnostic and treatment devices from 4 countries.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROFESSIONAL TIMELINE -->
+<section class="section" style="background:var(--cream)">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="section-label">Journey</div>
+      <h2 class="section-title">Professional <span class="accent">Timeline</span></h2>
+    </div>
+    <div class="timeline" style="max-width:900px;margin:3rem auto 0;">
+      <div class="tl-item reveal">
+        <div class="tl-left"><div class="tl-card"><div class="tl-year">2008</div><div class="tl-title">BNYS Graduation</div><div class="tl-desc">Completed Bachelor of Naturopathy & Yogic Sciences with distinction.</div></div></div>
+        <div class="tl-dot"></div>
+        <div class="tl-empty"></div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-empty"></div>
+        <div class="tl-dot"></div>
+        <div class="tl-right"><div class="tl-card"><div class="tl-year">2010</div><div class="tl-title">MD in Acupuncture</div><div class="tl-desc">Completed post-graduate MD (Acu) specializing in Classic and Master Tung Acupuncture techniques.</div></div></div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-left"><div class="tl-card"><div class="tl-year">2012</div><div class="tl-title">Clinic Foundation</div><div class="tl-desc">Established the foundation of BRC Clinic with a vision to offer holistic, non-surgical healing.</div></div></div>
+        <div class="tl-dot"></div>
+        <div class="tl-empty"></div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-empty"></div>
+        <div class="tl-dot"></div>
+        <div class="tl-right"><div class="tl-card"><div class="tl-year">2015</div><div class="tl-title">Advanced Certifications</div><div class="tl-desc">Obtained certifications in Neurotherapy, Hypnotherapy and Reiki Grand Master.</div></div></div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-left"><div class="tl-card"><div class="tl-year">2018</div><div class="tl-title">US FDA Equipment Integration</div><div class="tl-desc">Introduced US FDA-approved diagnostic equipment from Germany, Japan, China & India into the clinic.</div></div></div>
+        <div class="tl-dot"></div>
+        <div class="tl-empty"></div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-empty"></div>
+        <div class="tl-dot"></div>
+        <div class="tl-right"><div class="tl-card"><div class="tl-year">2021</div><div class="tl-title">India's Most Trusted Healthcare Award</div><div class="tl-desc">Recognized at the national level. Endorsed by Amisha Patel, Madan Lal & Dr. Vivek Bindra. Felicitated by AYUSH Ministry.</div></div></div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-left"><div class="tl-card"><div class="tl-year">2025</div><div class="tl-title">25,550+ Patients Healed</div><div class="tl-desc">Milestone reached — over 25,550 patients from across India have found lasting relief at BRC Clinic.</div></div></div>
+        <div class="tl-dot" style="background:var(--gold);box-shadow:0 0 0 3px var(--gold);"></div>
+        <div class="tl-empty"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="section team-section">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="section-label">Our Team</div>
+      <h2 class="section-title">The <span class="accent">People</span> Behind Your Healing</h2>
+      <p class="section-desc">Every therapist at BRC Clinic is hand-picked, trained and supervised by Dr. Arpita to ensure the highest standards of patient care.</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card reveal">
+        <div class="team-img-wrap">
+          <img src="images/dr-arpita.jpg" alt="Dr. Arpita Shefali" class="team-img" onerror="this.style.background='#E8F4FD';"/>
+          <div class="team-card-role">Lead Physician & Founder</div>
+        </div>
+        <div class="team-info">
+          <div class="team-name">Dr. Arpita Shefali</div>
+          <div class="team-qual">BNYS · MD (Acu) · DHNS · DECE</div>
+          <span class="team-exp">15+ Years Experience</span>
+        </div>
+      </div>
+      <div class="team-card reveal" style="transition-delay:0.15s">
+        <div class="team-img-wrap">
+          <img src="images/monika-gola.jpg" alt="Monika Gola" class="team-img" onerror="this.style.background='#0A3D62';"/>
+          <div class="team-card-role">Senior Therapist</div>
+        </div>
+        <div class="team-info">
+          <div class="team-name">Monika Gola</div>
+          <div class="team-qual">Master Diploma in Acupuncture</div>
+          <span class="team-exp">4 Years Experience</span>
+        </div>
+      </div>
+      <div class="team-card reveal" style="transition-delay:0.3s">
+        <div class="team-img-wrap">
+          <div style="width:100%;aspect-ratio:1;background:linear-gradient(135deg,#0A3D62,#0D7377);display:flex;align-items:center;justify-content:center;font-size:5rem;">👨‍⚕️</div>
+          <div class="team-card-role">Senior Therapist</div>
+        </div>
+        <div class="team-info">
+          <div class="team-name">Rohit Tomar</div>
+          <div class="team-qual">Master Diploma in Acupuncture</div>
+          <span class="team-exp">2.5 Years Experience</span>
+        </div>
+      </div>
+      <div class="team-card reveal" style="transition-delay:0.45s">
+        <div class="team-img-wrap">
+          <img src="images/gaurav-kumar.jpg" alt="Gaurav Kumar" class="team-img" onerror="this.style.background='#0D7377';"/>
+          <div class="team-card-role">Senior Therapist</div>
+        </div>
+        <div class="team-info">
+          <div class="team-name">Gaurav Kumar</div>
+          <div class="team-qual">Master Diploma in Acupuncture</div>
+          <span class="team-exp">2.5 Years Experience</span>
+        </div>
+      </div>
+      <div class="team-card reveal" style="transition-delay:0.6s">
+        <div class="team-img-wrap">
+          <img src="images/raviya-mansori.jpg" alt="Raviya Mansori" class="team-img" onerror="this.style.background='#C9815A';"/>
+          <div class="team-card-role">Junior Therapist</div>
+        </div>
+        <div class="team-info">
+          <div class="team-name">Raviya Mansori</div>
+          <div class="team-qual">Master Diploma in Acupuncture</div>
+          <span class="team-exp">1.5 Years Experience</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="container">
+    <h2>Ready to Start Your Healing Journey?</h2>
+    <p>Book a consultation with Dr. Arpita Shefali today and take the first step towards lasting relief.</p>
+    <div class="cta-banner-actions">
+      <a href="appointment.html" class="btn-cta-white">📅 Book Appointment</a>
+      <a href="tel:+919311642999" class="btn-cta-outline">📞 +91 93116 42999</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div><div class="footer-logo">BRC <span>Clinic</span></div><p class="footer-desc">Advanced holistic healing center in Gurugram. Led by Dr. Arpita Shefali with 15+ years of experience.</p><div class="footer-social"><a href="https://instagram.com/biophysiotherapy" target="_blank" class="social-icon">📸</a><a href="https://facebook.com" target="_blank" class="social-icon">👥</a><a href="https://wa.me/919311642999" target="_blank" class="social-icon">💬</a></div></div>
+    <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="conditions.html">Conditions</a></li><li><a href="appointment.html">Book Appointment</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul><li><a href="tel:+919311642999">📞 +91 93116 42999</a></li><li><a href="tel:+917050002000">📞 +91 70500 02000</a></li><li><a href="mailto:ceo@aarogita.com">✉️ ceo@aarogita.com</a></li><li><a href="contact.html">📍 342P, Basement, near Medicity, Islampur Village, Sector 38, Gurugram, Haryana 122001</a></li></ul></div>
+    <div class="footer-col"><h4>Legal</h4><ul><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms.html">Terms & Conditions</a></li><li><a href="sitemap.xml">Sitemap</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><p>© 2025 BRC Clinic – Pain, Spine & Joint Rehab. All rights reserved. | 342P, Basement, near Medicity, Islampur Village, Sector 38, Gurugram, Haryana 122001</p><div class="footer-bottom-links"><a href="privacy-policy.html">Privacy</a><a href="terms.html">Terms</a></div></div>
+</footer>
+
+<a href="https://wa.me/919311642999?text=Hello%20BRC%20Clinic!" target="_blank" id="whatsapp-btn">💬</a>
+<a href="tel:+919311642999" id="call-btn">📞</a>
+<button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<div id="toast"></div>
+<script src="js/main.js"></script>
+</body>
+</html>
